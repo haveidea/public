@@ -1,0 +1,3025 @@
+*design* DebussyLib (btIdent Verdi3_I-2014.03)
+Command arguments:
+    +define+verilog
+    -f flist.f
+        +incdir+../hdl/adcfilter
+        +incdir+../hdl/onewire
+        +incdir+../tb
+        ../tb/tb_onewire.v
+        ../hdl/adcfilter/sinc3_filter.v
+        ../hdl/onewire/CRC8_D1.v
+        ../hdl/onewire/CRC8_D8.v
+        ../hdl/onewire/crc8_func.v
+        ../hdl/onewire/crc8_lfsr.v
+        ../hdl/onewire/onewire_adapter.v
+        ../hdl/onewire/onewire_comparator.v
+        ../hdl/onewire/onewire_primitive.v
+        ../hdl/onewire/onewire_define.v
+        ../hdl/onewire/onewire_params.v
+        ../hdl/onewire/onewire_regfile.v
+    -sv
+
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 990: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 991: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 992: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 993: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 994: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 995: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 996: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 997: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 998: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 999: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1000: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1001: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1002: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1003: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1004: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1005: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1016: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1017: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1018: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1019: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1020: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1021: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1022: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1023: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1024: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1025: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1026: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1027: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1028: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1029: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1030: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1031: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1042: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1043: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1044: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1045: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1046: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1047: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1048: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1049: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1050: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1051: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1052: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1053: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1054: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1055: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1056: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1057: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1265: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1266: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1267: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1268: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1269: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1270: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1271: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1272: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1273: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1274: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1275: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1276: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1277: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1278: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1279: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1280: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1291: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1292: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1293: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1294: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1295: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1296: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1297: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1298: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1299: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1300: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1301: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1302: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1303: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1304: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1305: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1306: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1317: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1318: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1319: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1320: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1321: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1322: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1323: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1324: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1325: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1326: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1327: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1328: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1329: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1330: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1331: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1332: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1343: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1344: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1345: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1346: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1347: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1348: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1349: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1350: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1351: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1352: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1353: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1354: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1355: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1356: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1357: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1358: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2042: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2043: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2044: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2045: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2046: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2047: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2048: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2049: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2050: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2051: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2052: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2053: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2054: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2055: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2056: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2057: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2068: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2069: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2070: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2071: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2072: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2073: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2074: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2075: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2076: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2077: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2078: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2079: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2080: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2081: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2082: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2083: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2094: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2095: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2096: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2097: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2098: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2099: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2100: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2101: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2102: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2103: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2104: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2105: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2106: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2107: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2108: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2109: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2709: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2710: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2711: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2712: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2713: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2714: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2715: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2716: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2717: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2718: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2719: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2720: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2721: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2722: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2723: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2724: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2735: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2736: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2737: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2738: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2739: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2740: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2741: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2742: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2743: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2744: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2745: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2746: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2747: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2748: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2749: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2750: 
+
+*Warning* bit-select out of range
+"../tb/tb_onewire.v", 219: 
+
+*Warning* Module onewire_adapter redefined
+"../hdl/onewire/onewire_adapter.v", 25: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 990: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 991: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 992: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 993: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 994: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 995: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 996: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 997: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 998: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 999: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1000: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1001: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1002: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1003: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1004: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1005: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1016: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1017: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1018: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1019: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1020: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1021: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1022: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1023: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1024: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1025: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1026: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1027: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1028: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1029: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1030: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1031: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1042: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1043: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1044: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1045: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1046: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1047: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1048: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1049: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1050: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1051: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1052: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1053: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1054: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1055: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1056: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1057: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1265: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1266: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1267: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1268: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1269: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1270: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1271: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1272: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1273: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1274: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1275: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1276: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1277: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1278: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1279: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1280: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1291: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1292: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1293: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1294: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1295: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1296: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1297: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1298: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1299: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1300: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1301: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1302: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1303: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1304: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1305: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1306: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1317: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1318: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1319: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1320: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1321: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1322: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1323: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1324: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1325: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1326: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1327: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1328: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1329: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1330: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1331: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1332: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1343: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1344: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1345: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1346: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1347: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1348: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1349: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1350: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1351: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1352: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1353: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1354: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1355: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1356: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1357: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 1358: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2042: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2043: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2044: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2045: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2046: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2047: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2048: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2049: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2050: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2051: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2052: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2053: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2054: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2055: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2056: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2057: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2068: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2069: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2070: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2071: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2072: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2073: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2074: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2075: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2076: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2077: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2078: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2079: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2080: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2081: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2082: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2083: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2094: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2095: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2096: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2097: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2098: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2099: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2100: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2101: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2102: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2103: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2104: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2105: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2106: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2107: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2108: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2109: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2709: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2710: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2711: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2712: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2713: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2714: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2715: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2716: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2717: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2718: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2719: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2720: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2721: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2722: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2723: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2724: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2735: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2736: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2737: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2738: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2739: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2740: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2741: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2742: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2743: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2744: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2745: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2746: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2747: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2748: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2749: 
+
+*Warning* too many digits in hexadecimal
+"../hdl/onewire/onewire_adapter.v", 2750: 
+
+*Warning* Module onewire_comparator redefined
+"../hdl/onewire/onewire_comparator.v", 22: 
+
+*Warning* symbol OWRC_SearchROM duplicated
+"../hdl/onewire/onewire_params.v", 22: 
+
+*Warning* symbol OWRC_ReadROM duplicated
+"../hdl/onewire/onewire_params.v", 23: 
+
+*Warning* symbol OWRC_MatchROM duplicated
+"../hdl/onewire/onewire_params.v", 24: 
+
+*Warning* symbol OWRC_SkipROM duplicated
+"../hdl/onewire/onewire_params.v", 25: 
+
+*Warning* symbol OWRC_AlarmSearch duplicated
+"../hdl/onewire/onewire_params.v", 26: 
+
+*Warning* symbol OWRC_SetupROM duplicated
+"../hdl/onewire/onewire_params.v", 27: 
+
+*Warning* symbol OWFC_ConvertT duplicated
+"../hdl/onewire/onewire_params.v", 29: 
+
+*Warning* symbol OWFC_WriteReg duplicated
+"../hdl/onewire/onewire_params.v", 30: 
+
+*Warning* symbol OWFC_ReadReg duplicated
+"../hdl/onewire/onewire_params.v", 31: 
+
+*Warning* symbol OWFC_CopyReg duplicated
+"../hdl/onewire/onewire_params.v", 32: 
+
+*Warning* symbol OWFC_RecallE2 duplicated
+"../hdl/onewire/onewire_params.v", 33: 
+
+*Warning* symbol OWFC_ReadPPM duplicated
+"../hdl/onewire/onewire_params.v", 34: 
+
+*Warning* symbol XFLOWWIDTH duplicated
+"../hdl/onewire/onewire_params.v", 40: 
+
+*Warning* symbol XFLOW_OWFI duplicated
+"../hdl/onewire/onewire_params.v", 41: 
+
+*Warning* symbol XFLOW_OWLP duplicated
+"../hdl/onewire/onewire_params.v", 42: 
+
+*Warning* symbol XFLOW_OWRP duplicated
+"../hdl/onewire/onewire_params.v", 43: 
+
+*Warning* symbol XFLOW_OWWF duplicated
+"../hdl/onewire/onewire_params.v", 44: 
+
+*Warning* symbol XFLOW_OWPP duplicated
+"../hdl/onewire/onewire_params.v", 45: 
+
+*Warning* symbol XFLOW_OWRC duplicated
+"../hdl/onewire/onewire_params.v", 46: 
+
+*Warning* symbol XFLOW_OWFC duplicated
+"../hdl/onewire/onewire_params.v", 47: 
+
+*Warning* symbol XFLOW_OWNM duplicated
+"../hdl/onewire/onewire_params.v", 48: 
+
+*Warning* symbol TSLOTWIDTH duplicated
+"../hdl/onewire/onewire_params.v", 50: 
+
+*Warning* symbol TSLOT_IDLE duplicated
+"../hdl/onewire/onewire_params.v", 51: 
+
+*Warning* symbol TSLOT_ACTV duplicated
+"../hdl/onewire/onewire_params.v", 52: 
+
+*Warning* symbol TSLOT_INIT duplicated
+"../hdl/onewire/onewire_params.v", 53: 
+
+*Warning* symbol TSLOT_PULL duplicated
+"../hdl/onewire/onewire_params.v", 54: 
+
+*Warning* symbol TSLOT_SANK duplicated
+"../hdl/onewire/onewire_params.v", 55: 
+
+*Warning* symbol TSLOT_ANAT duplicated
+"../hdl/onewire/onewire_params.v", 56: 
+
+*Warning* symbol TSLOT_NIRV duplicated
+"../hdl/onewire/onewire_params.v", 57: 
+
+*Warning* symbol TSLOT_RENA duplicated
+"../hdl/onewire/onewire_params.v", 58: 
+
+*Warning* symbol TSLOT_SAMP duplicated
+"../hdl/onewire/onewire_params.v", 59: 
+
+*Warning* symbol TSLOT_TAIL duplicated
+"../hdl/onewire/onewire_params.v", 60: 
+
+*Warning* symbol TSLOT_MISS duplicated
+"../hdl/onewire/onewire_params.v", 61: 
+
+*Warning* symbol XFCNTWIDTH duplicated
+"../hdl/onewire/onewire_params.v", 64: 
+
+*Warning* symbol TSCNTWIDTH duplicated
+"../hdl/onewire/onewire_params.v", 65: 
+
+*Warning* symbol PDHCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 68: 
+
+*Warning* symbol PDHCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 69: 
+
+*Warning* symbol PDHCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 70: 
+
+*Warning* symbol PDHCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 71: 
+
+*Warning* symbol PDHCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 72: 
+
+*Warning* symbol PDHCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 73: 
+
+*Warning* symbol PDHCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 74: 
+
+*Warning* symbol PDHCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 75: 
+
+*Warning* symbol PDHCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 76: 
+
+*Warning* symbol PDHCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 77: 
+
+*Warning* symbol PDHCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 78: 
+
+*Warning* symbol PDHCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 79: 
+
+*Warning* symbol PDHCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 80: 
+
+*Warning* symbol PDHCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 81: 
+
+*Warning* symbol PDHCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 82: 
+
+*Warning* symbol PDHCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 83: 
+
+*Warning* symbol PDLCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 89: 
+
+*Warning* symbol PDLCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 90: 
+
+*Warning* symbol PDLCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 91: 
+
+*Warning* symbol PDLCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 92: 
+
+*Warning* symbol PDLCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 93: 
+
+*Warning* symbol PDLCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 94: 
+
+*Warning* symbol PDLCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 95: 
+
+*Warning* symbol PDLCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 96: 
+
+*Warning* symbol PDLCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 97: 
+
+*Warning* symbol PDLCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 98: 
+
+*Warning* symbol PDLCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 99: 
+
+*Warning* symbol PDLCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 100: 
+
+*Warning* symbol PDLCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 101: 
+
+*Warning* symbol PDLCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 102: 
+
+*Warning* symbol PDLCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 103: 
+
+*Warning* symbol PDLCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 104: 
+
+*Warning* symbol RLDCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 112: 
+
+*Warning* symbol RLDCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 113: 
+
+*Warning* symbol RLDCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 114: 
+
+*Warning* symbol RLDCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 115: 
+
+*Warning* symbol RLDCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 116: 
+
+*Warning* symbol RLDCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 117: 
+
+*Warning* symbol RLDCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 118: 
+
+*Warning* symbol RLDCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 119: 
+
+*Warning* symbol RLDCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 120: 
+
+*Warning* symbol RLDCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 121: 
+
+*Warning* symbol RLDCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 122: 
+
+*Warning* symbol RLDCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 123: 
+
+*Warning* symbol RLDCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 124: 
+
+*Warning* symbol RLDCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 125: 
+
+*Warning* symbol RLDCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 126: 
+
+*Warning* symbol RLDCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 127: 
+
+*Warning* symbol PHPCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 135: 
+
+*Warning* symbol PHPCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 136: 
+
+*Warning* symbol PHPCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 137: 
+
+*Warning* symbol PHPCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 138: 
+
+*Warning* symbol PHPCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 139: 
+
+*Warning* symbol PHPCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 140: 
+
+*Warning* symbol PHPCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 141: 
+
+*Warning* symbol PHPCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 142: 
+
+*Warning* symbol PHPCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 143: 
+
+*Warning* symbol PHPCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 144: 
+
+*Warning* symbol PHPCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 145: 
+
+*Warning* symbol PHPCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 146: 
+
+*Warning* symbol PHPCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 147: 
+
+*Warning* symbol PHPCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 148: 
+
+*Warning* symbol PHPCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 149: 
+
+*Warning* symbol PHPCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 150: 
+
+*Warning* symbol RPHCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 156: 
+
+*Warning* symbol RPHCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 157: 
+
+*Warning* symbol RPHCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 158: 
+
+*Warning* symbol RPHCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 159: 
+
+*Warning* symbol RPHCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 160: 
+
+*Warning* symbol RPHCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 161: 
+
+*Warning* symbol RPHCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 162: 
+
+*Warning* symbol RPHCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 163: 
+
+*Warning* symbol RPHCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 164: 
+
+*Warning* symbol RPHCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 165: 
+
+*Warning* symbol RPHCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 166: 
+
+*Warning* symbol RPHCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 167: 
+
+*Warning* symbol RPHCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 168: 
+
+*Warning* symbol RPHCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 169: 
+
+*Warning* symbol RPHCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 170: 
+
+*Warning* symbol RPHCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 171: 
+
+*Warning* symbol NPHCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 177: 
+
+*Warning* symbol NPHCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 178: 
+
+*Warning* symbol NPHCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 179: 
+
+*Warning* symbol NPHCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 180: 
+
+*Warning* symbol NPHCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 181: 
+
+*Warning* symbol NPHCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 182: 
+
+*Warning* symbol NPHCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 183: 
+
+*Warning* symbol NPHCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 184: 
+
+*Warning* symbol NPHCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 185: 
+
+*Warning* symbol NPHCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 186: 
+
+*Warning* symbol NPHCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 187: 
+
+*Warning* symbol NPHCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 188: 
+
+*Warning* symbol NPHCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 189: 
+
+*Warning* symbol NPHCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 190: 
+
+*Warning* symbol NPHCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 191: 
+
+*Warning* symbol NPHCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 192: 
+
+*Warning* symbol PLPCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 200: 
+
+*Warning* symbol PLPCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 201: 
+
+*Warning* symbol PLPCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 202: 
+
+*Warning* symbol PLPCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 203: 
+
+*Warning* symbol PLPCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 204: 
+
+*Warning* symbol PLPCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 205: 
+
+*Warning* symbol PLPCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 206: 
+
+*Warning* symbol PLPCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 207: 
+
+*Warning* symbol PLPCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 208: 
+
+*Warning* symbol PLPCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 209: 
+
+*Warning* symbol PLPCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 210: 
+
+*Warning* symbol PLPCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 211: 
+
+*Warning* symbol PLPCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 212: 
+
+*Warning* symbol PLPCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 213: 
+
+*Warning* symbol PLPCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 214: 
+
+*Warning* symbol PLPCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 215: 
+
+*Warning* symbol RPLCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 221: 
+
+*Warning* symbol RPLCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 222: 
+
+*Warning* symbol RPLCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 223: 
+
+*Warning* symbol RPLCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 224: 
+
+*Warning* symbol RPLCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 225: 
+
+*Warning* symbol RPLCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 226: 
+
+*Warning* symbol RPLCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 227: 
+
+*Warning* symbol RPLCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 228: 
+
+*Warning* symbol RPLCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 229: 
+
+*Warning* symbol RPLCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 230: 
+
+*Warning* symbol RPLCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 231: 
+
+*Warning* symbol RPLCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 232: 
+
+*Warning* symbol RPLCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 233: 
+
+*Warning* symbol RPLCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 234: 
+
+*Warning* symbol RPLCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 235: 
+
+*Warning* symbol RPLCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 236: 
+
+*Warning* symbol NPLCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 242: 
+
+*Warning* symbol NPLCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 243: 
+
+*Warning* symbol NPLCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 244: 
+
+*Warning* symbol NPLCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 245: 
+
+*Warning* symbol NPLCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 246: 
+
+*Warning* symbol NPLCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 247: 
+
+*Warning* symbol NPLCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 248: 
+
+*Warning* symbol NPLCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 249: 
+
+*Warning* symbol NPLCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 250: 
+
+*Warning* symbol NPLCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 251: 
+
+*Warning* symbol NPLCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 252: 
+
+*Warning* symbol NPLCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 253: 
+
+*Warning* symbol NPLCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 254: 
+
+*Warning* symbol NPLCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 255: 
+
+*Warning* symbol NPLCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 256: 
+
+*Warning* symbol NPLCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 257: 
+
+*Warning* symbol SWTCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 265: 
+
+*Warning* symbol SWTCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 266: 
+
+*Warning* symbol SWTCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 267: 
+
+*Warning* symbol SWTCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 268: 
+
+*Warning* symbol SWTCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 269: 
+
+*Warning* symbol SWTCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 270: 
+
+*Warning* symbol SWTCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 271: 
+
+*Warning* symbol SWTCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 272: 
+
+*Warning* symbol SWTCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 273: 
+
+*Warning* symbol SWTCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 274: 
+
+*Warning* symbol SWTCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 275: 
+
+*Warning* symbol SWTCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 276: 
+
+*Warning* symbol SWTCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 277: 
+
+*Warning* symbol SWTCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 278: 
+
+*Warning* symbol SWTCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 279: 
+
+*Warning* symbol SWTCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 280: 
+
+*Warning* symbol SDPCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 286: 
+
+*Warning* symbol SDPCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 287: 
+
+*Warning* symbol SDPCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 288: 
+
+*Warning* symbol SDPCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 289: 
+
+*Warning* symbol SDPCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 290: 
+
+*Warning* symbol SDPCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 291: 
+
+*Warning* symbol SDPCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 292: 
+
+*Warning* symbol SDPCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 293: 
+
+*Warning* symbol SDPCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 294: 
+
+*Warning* symbol SDPCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 295: 
+
+*Warning* symbol SDPCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 296: 
+
+*Warning* symbol SDPCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 297: 
+
+*Warning* symbol SDPCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 298: 
+
+*Warning* symbol SDPCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 299: 
+
+*Warning* symbol SDPCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 300: 
+
+*Warning* symbol SDPCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 301: 
+
+*Warning* symbol SPKCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 307: 
+
+*Warning* symbol SPKCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 308: 
+
+*Warning* symbol SPKCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 309: 
+
+*Warning* symbol SPKCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 310: 
+
+*Warning* symbol SPKCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 311: 
+
+*Warning* symbol SPKCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 312: 
+
+*Warning* symbol SPKCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 313: 
+
+*Warning* symbol SPKCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 314: 
+
+*Warning* symbol SPKCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 315: 
+
+*Warning* symbol SPKCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 316: 
+
+*Warning* symbol SPKCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 317: 
+
+*Warning* symbol SPKCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 318: 
+
+*Warning* symbol SPKCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 319: 
+
+*Warning* symbol SPKCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 320: 
+
+*Warning* symbol SPKCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 321: 
+
+*Warning* symbol SPKCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 322: 
+
+*Warning* symbol COMMREG_DEF duplicated
+"../hdl/onewire/onewire_params.v", 328: 
+
+*Warning* symbol COMMCYC0 duplicated
+"../hdl/onewire/onewire_params.v", 329: 
+
+*Warning* symbol COMMCYC1 duplicated
+"../hdl/onewire/onewire_params.v", 330: 
+
+*Warning* symbol COMMCYC2 duplicated
+"../hdl/onewire/onewire_params.v", 331: 
+
+*Warning* symbol COMMCYC3 duplicated
+"../hdl/onewire/onewire_params.v", 332: 
+
+*Warning* symbol COMMCYC4 duplicated
+"../hdl/onewire/onewire_params.v", 333: 
+
+*Warning* symbol COMMCYC5 duplicated
+"../hdl/onewire/onewire_params.v", 334: 
+
+*Warning* symbol COMMCYC6 duplicated
+"../hdl/onewire/onewire_params.v", 335: 
+
+*Warning* symbol COMMCYC7 duplicated
+"../hdl/onewire/onewire_params.v", 336: 
+
+*Warning* symbol ROMCODE_DEF duplicated
+"../hdl/onewire/onewire_params.v", 340: 
+
+*Warning* symbol ROMCYC00 duplicated
+"../hdl/onewire/onewire_params.v", 341: 
+
+*Warning* symbol ROMCYC01 duplicated
+"../hdl/onewire/onewire_params.v", 342: 
+
+*Warning* symbol ROMCYC02 duplicated
+"../hdl/onewire/onewire_params.v", 343: 
+
+*Warning* symbol ROMCYC03 duplicated
+"../hdl/onewire/onewire_params.v", 344: 
+
+*Warning* symbol ROMCYC04 duplicated
+"../hdl/onewire/onewire_params.v", 345: 
+
+*Warning* symbol ROMCYC05 duplicated
+"../hdl/onewire/onewire_params.v", 346: 
+
+*Warning* symbol ROMCYC06 duplicated
+"../hdl/onewire/onewire_params.v", 347: 
+
+*Warning* symbol ROMCYC07 duplicated
+"../hdl/onewire/onewire_params.v", 348: 
+
+*Warning* symbol ROMCYC08 duplicated
+"../hdl/onewire/onewire_params.v", 349: 
+
+*Warning* symbol ROMCYC09 duplicated
+"../hdl/onewire/onewire_params.v", 350: 
+
+*Warning* symbol ROMCYC10 duplicated
+"../hdl/onewire/onewire_params.v", 351: 
+
+*Warning* symbol ROMCYC11 duplicated
+"../hdl/onewire/onewire_params.v", 352: 
+
+*Warning* symbol ROMCYC12 duplicated
+"../hdl/onewire/onewire_params.v", 353: 
+
+*Warning* symbol ROMCYC13 duplicated
+"../hdl/onewire/onewire_params.v", 354: 
+
+*Warning* symbol ROMCYC14 duplicated
+"../hdl/onewire/onewire_params.v", 355: 
+
+*Warning* symbol ROMCYC15 duplicated
+"../hdl/onewire/onewire_params.v", 356: 
+
+*Warning* symbol ROMCYC16 duplicated
+"../hdl/onewire/onewire_params.v", 357: 
+
+*Warning* symbol ROMCYC17 duplicated
+"../hdl/onewire/onewire_params.v", 358: 
+
+*Warning* symbol ROMCYC18 duplicated
+"../hdl/onewire/onewire_params.v", 359: 
+
+*Warning* symbol ROMCYC19 duplicated
+"../hdl/onewire/onewire_params.v", 360: 
+
+*Warning* symbol ROMCYC20 duplicated
+"../hdl/onewire/onewire_params.v", 361: 
+
+*Warning* symbol ROMCYC21 duplicated
+"../hdl/onewire/onewire_params.v", 362: 
+
+*Warning* symbol ROMCYC22 duplicated
+"../hdl/onewire/onewire_params.v", 363: 
+
+*Warning* symbol ROMCYC23 duplicated
+"../hdl/onewire/onewire_params.v", 364: 
+
+*Warning* symbol ROMCYC24 duplicated
+"../hdl/onewire/onewire_params.v", 365: 
+
+*Warning* symbol ROMCYC25 duplicated
+"../hdl/onewire/onewire_params.v", 366: 
+
+*Warning* symbol ROMCYC26 duplicated
+"../hdl/onewire/onewire_params.v", 367: 
+
+*Warning* symbol ROMCYC27 duplicated
+"../hdl/onewire/onewire_params.v", 368: 
+
+*Warning* symbol ROMCYC28 duplicated
+"../hdl/onewire/onewire_params.v", 369: 
+
+*Warning* symbol ROMCYC29 duplicated
+"../hdl/onewire/onewire_params.v", 370: 
+
+*Warning* symbol ROMCYC30 duplicated
+"../hdl/onewire/onewire_params.v", 371: 
+
+*Warning* symbol ROMCYC31 duplicated
+"../hdl/onewire/onewire_params.v", 372: 
+
+*Warning* symbol ROMCYC32 duplicated
+"../hdl/onewire/onewire_params.v", 373: 
+
+*Warning* symbol ROMCYC33 duplicated
+"../hdl/onewire/onewire_params.v", 374: 
+
+*Warning* symbol ROMCYC34 duplicated
+"../hdl/onewire/onewire_params.v", 375: 
+
+*Warning* symbol ROMCYC35 duplicated
+"../hdl/onewire/onewire_params.v", 376: 
+
+*Warning* symbol ROMCYC36 duplicated
+"../hdl/onewire/onewire_params.v", 377: 
+
+*Warning* symbol ROMCYC37 duplicated
+"../hdl/onewire/onewire_params.v", 378: 
+
+*Warning* symbol ROMCYC38 duplicated
+"../hdl/onewire/onewire_params.v", 379: 
+
+*Warning* symbol ROMCYC39 duplicated
+"../hdl/onewire/onewire_params.v", 380: 
+
+*Warning* symbol ROMCYC40 duplicated
+"../hdl/onewire/onewire_params.v", 381: 
+
+*Warning* symbol ROMCYC41 duplicated
+"../hdl/onewire/onewire_params.v", 382: 
+
+*Warning* symbol ROMCYC42 duplicated
+"../hdl/onewire/onewire_params.v", 383: 
+
+*Warning* symbol ROMCYC43 duplicated
+"../hdl/onewire/onewire_params.v", 384: 
+
+*Warning* symbol ROMCYC44 duplicated
+"../hdl/onewire/onewire_params.v", 385: 
+
+*Warning* symbol ROMCYC45 duplicated
+"../hdl/onewire/onewire_params.v", 386: 
+
+*Warning* symbol ROMCYC46 duplicated
+"../hdl/onewire/onewire_params.v", 387: 
+
+*Warning* symbol ROMCYC47 duplicated
+"../hdl/onewire/onewire_params.v", 388: 
+
+*Warning* symbol ROMCYC48 duplicated
+"../hdl/onewire/onewire_params.v", 389: 
+
+*Warning* symbol ROMCYC49 duplicated
+"../hdl/onewire/onewire_params.v", 390: 
+
+*Warning* symbol ROMCYC50 duplicated
+"../hdl/onewire/onewire_params.v", 391: 
+
+*Warning* symbol ROMCYC51 duplicated
+"../hdl/onewire/onewire_params.v", 392: 
+
+*Warning* symbol ROMCYC52 duplicated
+"../hdl/onewire/onewire_params.v", 393: 
+
+*Warning* symbol ROMCYC53 duplicated
+"../hdl/onewire/onewire_params.v", 394: 
+
+*Warning* symbol ROMCYC54 duplicated
+"../hdl/onewire/onewire_params.v", 395: 
+
+*Warning* symbol ROMCYC55 duplicated
+"../hdl/onewire/onewire_params.v", 396: 
+
+*Warning* symbol ROMCYC56 duplicated
+"../hdl/onewire/onewire_params.v", 397: 
+
+*Warning* symbol ROMCYC57 duplicated
+"../hdl/onewire/onewire_params.v", 398: 
+
+*Warning* symbol ROMCYC58 duplicated
+"../hdl/onewire/onewire_params.v", 399: 
+
+*Warning* symbol ROMCYC59 duplicated
+"../hdl/onewire/onewire_params.v", 400: 
+
+*Warning* symbol ROMCYC60 duplicated
+"../hdl/onewire/onewire_params.v", 401: 
+
+*Warning* symbol ROMCYC61 duplicated
+"../hdl/onewire/onewire_params.v", 402: 
+
+*Warning* symbol ROMCYC62 duplicated
+"../hdl/onewire/onewire_params.v", 403: 
+
+*Warning* symbol ROMCYC63 duplicated
+"../hdl/onewire/onewire_params.v", 404: 
+
+*Warning* symbol ROMBIT00T duplicated
+"../hdl/onewire/onewire_params.v", 407: 
+
+*Warning* symbol ROMBIT00F duplicated
+"../hdl/onewire/onewire_params.v", 408: 
+
+*Warning* symbol ROMBIT00W duplicated
+"../hdl/onewire/onewire_params.v", 409: 
+
+*Warning* symbol ROMBIT01T duplicated
+"../hdl/onewire/onewire_params.v", 410: 
+
+*Warning* symbol ROMBIT01F duplicated
+"../hdl/onewire/onewire_params.v", 411: 
+
+*Warning* symbol ROMBIT01W duplicated
+"../hdl/onewire/onewire_params.v", 412: 
+
+*Warning* symbol ROMBIT02T duplicated
+"../hdl/onewire/onewire_params.v", 413: 
+
+*Warning* symbol ROMBIT02F duplicated
+"../hdl/onewire/onewire_params.v", 414: 
+
+*Warning* symbol ROMBIT02W duplicated
+"../hdl/onewire/onewire_params.v", 415: 
+
+*Warning* symbol ROMBIT03T duplicated
+"../hdl/onewire/onewire_params.v", 416: 
+
+*Warning* symbol ROMBIT03F duplicated
+"../hdl/onewire/onewire_params.v", 417: 
+
+*Warning* symbol ROMBIT03W duplicated
+"../hdl/onewire/onewire_params.v", 418: 
+
+*Warning* symbol ROMBIT04T duplicated
+"../hdl/onewire/onewire_params.v", 419: 
+
+*Warning* symbol ROMBIT04F duplicated
+"../hdl/onewire/onewire_params.v", 420: 
+
+*Warning* symbol ROMBIT04W duplicated
+"../hdl/onewire/onewire_params.v", 421: 
+
+*Warning* symbol ROMBIT05T duplicated
+"../hdl/onewire/onewire_params.v", 422: 
+
+*Warning* symbol ROMBIT05F duplicated
+"../hdl/onewire/onewire_params.v", 423: 
+
+*Warning* symbol ROMBIT05W duplicated
+"../hdl/onewire/onewire_params.v", 424: 
+
+*Warning* symbol ROMBIT06T duplicated
+"../hdl/onewire/onewire_params.v", 425: 
+
+*Warning* symbol ROMBIT06F duplicated
+"../hdl/onewire/onewire_params.v", 426: 
+
+*Warning* symbol ROMBIT06W duplicated
+"../hdl/onewire/onewire_params.v", 427: 
+
+*Warning* symbol ROMBIT07T duplicated
+"../hdl/onewire/onewire_params.v", 428: 
+
+*Warning* symbol ROMBIT07F duplicated
+"../hdl/onewire/onewire_params.v", 429: 
+
+*Warning* symbol ROMBIT07W duplicated
+"../hdl/onewire/onewire_params.v", 430: 
+
+*Warning* symbol ROMBIT08T duplicated
+"../hdl/onewire/onewire_params.v", 431: 
+
+*Warning* symbol ROMBIT08F duplicated
+"../hdl/onewire/onewire_params.v", 432: 
+
+*Warning* symbol ROMBIT08W duplicated
+"../hdl/onewire/onewire_params.v", 433: 
+
+*Warning* symbol ROMBIT09T duplicated
+"../hdl/onewire/onewire_params.v", 434: 
+
+*Warning* symbol ROMBIT09F duplicated
+"../hdl/onewire/onewire_params.v", 435: 
+
+*Warning* symbol ROMBIT09W duplicated
+"../hdl/onewire/onewire_params.v", 436: 
+
+*Warning* symbol ROMBIT10T duplicated
+"../hdl/onewire/onewire_params.v", 437: 
+
+*Warning* symbol ROMBIT10F duplicated
+"../hdl/onewire/onewire_params.v", 438: 
+
+*Warning* symbol ROMBIT10W duplicated
+"../hdl/onewire/onewire_params.v", 439: 
+
+*Warning* symbol ROMBIT11T duplicated
+"../hdl/onewire/onewire_params.v", 440: 
+
+*Warning* symbol ROMBIT11F duplicated
+"../hdl/onewire/onewire_params.v", 441: 
+
+*Warning* symbol ROMBIT11W duplicated
+"../hdl/onewire/onewire_params.v", 442: 
+
+*Warning* symbol ROMBIT12T duplicated
+"../hdl/onewire/onewire_params.v", 443: 
+
+*Warning* symbol ROMBIT12F duplicated
+"../hdl/onewire/onewire_params.v", 444: 
+
+*Warning* symbol ROMBIT12W duplicated
+"../hdl/onewire/onewire_params.v", 445: 
+
+*Warning* symbol ROMBIT13T duplicated
+"../hdl/onewire/onewire_params.v", 446: 
+
+*Warning* symbol ROMBIT13F duplicated
+"../hdl/onewire/onewire_params.v", 447: 
+
+*Warning* symbol ROMBIT13W duplicated
+"../hdl/onewire/onewire_params.v", 448: 
+
+*Warning* symbol ROMBIT14T duplicated
+"../hdl/onewire/onewire_params.v", 449: 
+
+*Warning* symbol ROMBIT14F duplicated
+"../hdl/onewire/onewire_params.v", 450: 
+
+*Warning* symbol ROMBIT14W duplicated
+"../hdl/onewire/onewire_params.v", 451: 
+
+*Warning* symbol ROMBIT15T duplicated
+"../hdl/onewire/onewire_params.v", 452: 
+
+*Warning* symbol ROMBIT15F duplicated
+"../hdl/onewire/onewire_params.v", 453: 
+
+*Warning* symbol ROMBIT15W duplicated
+"../hdl/onewire/onewire_params.v", 454: 
+
+*Warning* symbol ROMBIT16T duplicated
+"../hdl/onewire/onewire_params.v", 455: 
+
+*Warning* symbol ROMBIT16F duplicated
+"../hdl/onewire/onewire_params.v", 456: 
+
+*Warning* symbol ROMBIT16W duplicated
+"../hdl/onewire/onewire_params.v", 457: 
+
+*Warning* symbol ROMBIT17T duplicated
+"../hdl/onewire/onewire_params.v", 458: 
+
+*Warning* symbol ROMBIT17F duplicated
+"../hdl/onewire/onewire_params.v", 459: 
+
+*Warning* symbol ROMBIT17W duplicated
+"../hdl/onewire/onewire_params.v", 460: 
+
+*Warning* symbol ROMBIT18T duplicated
+"../hdl/onewire/onewire_params.v", 461: 
+
+*Warning* symbol ROMBIT18F duplicated
+"../hdl/onewire/onewire_params.v", 462: 
+
+*Warning* symbol ROMBIT18W duplicated
+"../hdl/onewire/onewire_params.v", 463: 
+
+*Warning* symbol ROMBIT19T duplicated
+"../hdl/onewire/onewire_params.v", 464: 
+
+*Warning* symbol ROMBIT19F duplicated
+"../hdl/onewire/onewire_params.v", 465: 
+
+*Warning* symbol ROMBIT19W duplicated
+"../hdl/onewire/onewire_params.v", 466: 
+
+*Warning* symbol ROMBIT20T duplicated
+"../hdl/onewire/onewire_params.v", 467: 
+
+*Warning* symbol ROMBIT20F duplicated
+"../hdl/onewire/onewire_params.v", 468: 
+
+*Warning* symbol ROMBIT20W duplicated
+"../hdl/onewire/onewire_params.v", 469: 
+
+*Warning* symbol ROMBIT21T duplicated
+"../hdl/onewire/onewire_params.v", 470: 
+
+*Warning* symbol ROMBIT21F duplicated
+"../hdl/onewire/onewire_params.v", 471: 
+
+*Warning* symbol ROMBIT21W duplicated
+"../hdl/onewire/onewire_params.v", 472: 
+
+*Warning* symbol ROMBIT22T duplicated
+"../hdl/onewire/onewire_params.v", 473: 
+
+*Warning* symbol ROMBIT22F duplicated
+"../hdl/onewire/onewire_params.v", 474: 
+
+*Warning* symbol ROMBIT22W duplicated
+"../hdl/onewire/onewire_params.v", 475: 
+
+*Warning* symbol ROMBIT23T duplicated
+"../hdl/onewire/onewire_params.v", 476: 
+
+*Warning* symbol ROMBIT23F duplicated
+"../hdl/onewire/onewire_params.v", 477: 
+
+*Warning* symbol ROMBIT23W duplicated
+"../hdl/onewire/onewire_params.v", 478: 
+
+*Warning* symbol ROMBIT24T duplicated
+"../hdl/onewire/onewire_params.v", 479: 
+
+*Warning* symbol ROMBIT24F duplicated
+"../hdl/onewire/onewire_params.v", 480: 
+
+*Warning* symbol ROMBIT24W duplicated
+"../hdl/onewire/onewire_params.v", 481: 
+
+*Warning* symbol ROMBIT25T duplicated
+"../hdl/onewire/onewire_params.v", 482: 
+
+*Warning* symbol ROMBIT25F duplicated
+"../hdl/onewire/onewire_params.v", 483: 
+
+*Warning* symbol ROMBIT25W duplicated
+"../hdl/onewire/onewire_params.v", 484: 
+
+*Warning* symbol ROMBIT26T duplicated
+"../hdl/onewire/onewire_params.v", 485: 
+
+*Warning* symbol ROMBIT26F duplicated
+"../hdl/onewire/onewire_params.v", 486: 
+
+*Warning* symbol ROMBIT26W duplicated
+"../hdl/onewire/onewire_params.v", 487: 
+
+*Warning* symbol ROMBIT27T duplicated
+"../hdl/onewire/onewire_params.v", 488: 
+
+*Warning* symbol ROMBIT27F duplicated
+"../hdl/onewire/onewire_params.v", 489: 
+
+*Warning* symbol ROMBIT27W duplicated
+"../hdl/onewire/onewire_params.v", 490: 
+
+*Warning* symbol ROMBIT28T duplicated
+"../hdl/onewire/onewire_params.v", 491: 
+
+*Warning* symbol ROMBIT28F duplicated
+"../hdl/onewire/onewire_params.v", 492: 
+
+*Warning* symbol ROMBIT28W duplicated
+"../hdl/onewire/onewire_params.v", 493: 
+
+*Warning* symbol ROMBIT29T duplicated
+"../hdl/onewire/onewire_params.v", 494: 
+
+*Warning* symbol ROMBIT29F duplicated
+"../hdl/onewire/onewire_params.v", 495: 
+
+*Warning* symbol ROMBIT29W duplicated
+"../hdl/onewire/onewire_params.v", 496: 
+
+*Warning* symbol ROMBIT30T duplicated
+"../hdl/onewire/onewire_params.v", 497: 
+
+*Warning* symbol ROMBIT30F duplicated
+"../hdl/onewire/onewire_params.v", 498: 
+
+*Warning* symbol ROMBIT30W duplicated
+"../hdl/onewire/onewire_params.v", 499: 
+
+*Warning* symbol ROMBIT31T duplicated
+"../hdl/onewire/onewire_params.v", 500: 
+
+*Warning* symbol ROMBIT31F duplicated
+"../hdl/onewire/onewire_params.v", 501: 
+
+*Warning* symbol ROMBIT31W duplicated
+"../hdl/onewire/onewire_params.v", 502: 
+
+*Warning* symbol ROMBIT32T duplicated
+"../hdl/onewire/onewire_params.v", 503: 
+
+*Warning* symbol ROMBIT32F duplicated
+"../hdl/onewire/onewire_params.v", 504: 
+
+*Warning* symbol ROMBIT32W duplicated
+"../hdl/onewire/onewire_params.v", 505: 
+
+*Warning* symbol ROMBIT33T duplicated
+"../hdl/onewire/onewire_params.v", 506: 
+
+*Warning* symbol ROMBIT33F duplicated
+"../hdl/onewire/onewire_params.v", 507: 
+
+*Warning* symbol ROMBIT33W duplicated
+"../hdl/onewire/onewire_params.v", 508: 
+
+*Warning* symbol ROMBIT34T duplicated
+"../hdl/onewire/onewire_params.v", 509: 
+
+*Warning* symbol ROMBIT34F duplicated
+"../hdl/onewire/onewire_params.v", 510: 
+
+*Warning* symbol ROMBIT34W duplicated
+"../hdl/onewire/onewire_params.v", 511: 
+
+*Warning* symbol ROMBIT35T duplicated
+"../hdl/onewire/onewire_params.v", 512: 
+
+*Warning* symbol ROMBIT35F duplicated
+"../hdl/onewire/onewire_params.v", 513: 
+
+*Warning* symbol ROMBIT35W duplicated
+"../hdl/onewire/onewire_params.v", 514: 
+
+*Warning* symbol ROMBIT36T duplicated
+"../hdl/onewire/onewire_params.v", 515: 
+
+*Warning* symbol ROMBIT36F duplicated
+"../hdl/onewire/onewire_params.v", 516: 
+
+*Warning* symbol ROMBIT36W duplicated
+"../hdl/onewire/onewire_params.v", 517: 
+
+*Warning* symbol ROMBIT37T duplicated
+"../hdl/onewire/onewire_params.v", 518: 
+
+*Warning* symbol ROMBIT37F duplicated
+"../hdl/onewire/onewire_params.v", 519: 
+
+*Warning* symbol ROMBIT37W duplicated
+"../hdl/onewire/onewire_params.v", 520: 
+
+*Warning* symbol ROMBIT38T duplicated
+"../hdl/onewire/onewire_params.v", 521: 
+
+*Warning* symbol ROMBIT38F duplicated
+"../hdl/onewire/onewire_params.v", 522: 
+
+*Warning* symbol ROMBIT38W duplicated
+"../hdl/onewire/onewire_params.v", 523: 
+
+*Warning* symbol ROMBIT39T duplicated
+"../hdl/onewire/onewire_params.v", 524: 
+
+*Warning* symbol ROMBIT39F duplicated
+"../hdl/onewire/onewire_params.v", 525: 
+
+*Warning* symbol ROMBIT39W duplicated
+"../hdl/onewire/onewire_params.v", 526: 
+
+*Warning* symbol ROMBIT40T duplicated
+"../hdl/onewire/onewire_params.v", 527: 
+
+*Warning* symbol ROMBIT40F duplicated
+"../hdl/onewire/onewire_params.v", 528: 
+
+*Warning* symbol ROMBIT40W duplicated
+"../hdl/onewire/onewire_params.v", 529: 
+
+*Warning* symbol ROMBIT41T duplicated
+"../hdl/onewire/onewire_params.v", 530: 
+
+*Warning* symbol ROMBIT41F duplicated
+"../hdl/onewire/onewire_params.v", 531: 
+
+*Warning* symbol ROMBIT41W duplicated
+"../hdl/onewire/onewire_params.v", 532: 
+
+*Warning* symbol ROMBIT42T duplicated
+"../hdl/onewire/onewire_params.v", 533: 
+
+*Warning* symbol ROMBIT42F duplicated
+"../hdl/onewire/onewire_params.v", 534: 
+
+*Warning* symbol ROMBIT42W duplicated
+"../hdl/onewire/onewire_params.v", 535: 
+
+*Warning* symbol ROMBIT43T duplicated
+"../hdl/onewire/onewire_params.v", 536: 
+
+*Warning* symbol ROMBIT43F duplicated
+"../hdl/onewire/onewire_params.v", 537: 
+
+*Warning* symbol ROMBIT43W duplicated
+"../hdl/onewire/onewire_params.v", 538: 
+
+*Warning* symbol ROMBIT44T duplicated
+"../hdl/onewire/onewire_params.v", 539: 
+
+*Warning* symbol ROMBIT44F duplicated
+"../hdl/onewire/onewire_params.v", 540: 
+
+*Warning* symbol ROMBIT44W duplicated
+"../hdl/onewire/onewire_params.v", 541: 
+
+*Warning* symbol ROMBIT45T duplicated
+"../hdl/onewire/onewire_params.v", 542: 
+
+*Warning* symbol ROMBIT45F duplicated
+"../hdl/onewire/onewire_params.v", 543: 
+
+*Warning* symbol ROMBIT45W duplicated
+"../hdl/onewire/onewire_params.v", 544: 
+
+*Warning* symbol ROMBIT46T duplicated
+"../hdl/onewire/onewire_params.v", 545: 
+
+*Warning* symbol ROMBIT46F duplicated
+"../hdl/onewire/onewire_params.v", 546: 
+
+*Warning* symbol ROMBIT46W duplicated
+"../hdl/onewire/onewire_params.v", 547: 
+
+*Warning* symbol ROMBIT47T duplicated
+"../hdl/onewire/onewire_params.v", 548: 
+
+*Warning* symbol ROMBIT47F duplicated
+"../hdl/onewire/onewire_params.v", 549: 
+
+*Warning* symbol ROMBIT47W duplicated
+"../hdl/onewire/onewire_params.v", 550: 
+
+*Warning* symbol ROMBIT48T duplicated
+"../hdl/onewire/onewire_params.v", 551: 
+
+*Warning* symbol ROMBIT48F duplicated
+"../hdl/onewire/onewire_params.v", 552: 
+
+*Warning* symbol ROMBIT48W duplicated
+"../hdl/onewire/onewire_params.v", 553: 
+
+*Warning* symbol ROMBIT49T duplicated
+"../hdl/onewire/onewire_params.v", 554: 
+
+*Warning* symbol ROMBIT49F duplicated
+"../hdl/onewire/onewire_params.v", 555: 
+
+*Warning* symbol ROMBIT49W duplicated
+"../hdl/onewire/onewire_params.v", 556: 
+
+*Warning* symbol ROMBIT50T duplicated
+"../hdl/onewire/onewire_params.v", 557: 
+
+*Warning* symbol ROMBIT50F duplicated
+"../hdl/onewire/onewire_params.v", 558: 
+
+*Warning* symbol ROMBIT50W duplicated
+"../hdl/onewire/onewire_params.v", 559: 
+
+*Warning* symbol ROMBIT51T duplicated
+"../hdl/onewire/onewire_params.v", 560: 
+
+*Warning* symbol ROMBIT51F duplicated
+"../hdl/onewire/onewire_params.v", 561: 
+
+*Warning* symbol ROMBIT51W duplicated
+"../hdl/onewire/onewire_params.v", 562: 
+
+*Warning* symbol ROMBIT52T duplicated
+"../hdl/onewire/onewire_params.v", 563: 
+
+*Warning* symbol ROMBIT52F duplicated
+"../hdl/onewire/onewire_params.v", 564: 
+
+*Warning* symbol ROMBIT52W duplicated
+"../hdl/onewire/onewire_params.v", 565: 
+
+*Warning* symbol ROMBIT53T duplicated
+"../hdl/onewire/onewire_params.v", 566: 
+
+*Warning* symbol ROMBIT53F duplicated
+"../hdl/onewire/onewire_params.v", 567: 
+
+*Warning* symbol ROMBIT53W duplicated
+"../hdl/onewire/onewire_params.v", 568: 
+
+*Warning* symbol ROMBIT54T duplicated
+"../hdl/onewire/onewire_params.v", 569: 
+
+*Warning* symbol ROMBIT54F duplicated
+"../hdl/onewire/onewire_params.v", 570: 
+
+*Warning* symbol ROMBIT54W duplicated
+"../hdl/onewire/onewire_params.v", 571: 
+
+*Warning* symbol ROMBIT55T duplicated
+"../hdl/onewire/onewire_params.v", 572: 
+
+*Warning* symbol ROMBIT55F duplicated
+"../hdl/onewire/onewire_params.v", 573: 
+
+*Warning* symbol ROMBIT55W duplicated
+"../hdl/onewire/onewire_params.v", 574: 
+
+*Warning* symbol ROMBIT56T duplicated
+"../hdl/onewire/onewire_params.v", 575: 
+
+*Warning* symbol ROMBIT56F duplicated
+"../hdl/onewire/onewire_params.v", 576: 
+
+*Warning* symbol ROMBIT56W duplicated
+"../hdl/onewire/onewire_params.v", 577: 
+
+*Warning* symbol ROMBIT57T duplicated
+"../hdl/onewire/onewire_params.v", 578: 
+
+*Warning* symbol ROMBIT57F duplicated
+"../hdl/onewire/onewire_params.v", 579: 
+
+*Warning* symbol ROMBIT57W duplicated
+"../hdl/onewire/onewire_params.v", 580: 
+
+*Warning* symbol ROMBIT58T duplicated
+"../hdl/onewire/onewire_params.v", 581: 
+
+*Warning* symbol ROMBIT58F duplicated
+"../hdl/onewire/onewire_params.v", 582: 
+
+*Warning* symbol ROMBIT58W duplicated
+"../hdl/onewire/onewire_params.v", 583: 
+
+*Warning* symbol ROMBIT59T duplicated
+"../hdl/onewire/onewire_params.v", 584: 
+
+*Warning* symbol ROMBIT59F duplicated
+"../hdl/onewire/onewire_params.v", 585: 
+
+*Warning* symbol ROMBIT59W duplicated
+"../hdl/onewire/onewire_params.v", 586: 
+
+*Warning* symbol ROMBIT60T duplicated
+"../hdl/onewire/onewire_params.v", 587: 
+
+*Warning* symbol ROMBIT60F duplicated
+"../hdl/onewire/onewire_params.v", 588: 
+
+*Warning* symbol ROMBIT60W duplicated
+"../hdl/onewire/onewire_params.v", 589: 
+
+*Warning* symbol ROMBIT61T duplicated
+"../hdl/onewire/onewire_params.v", 590: 
+
+*Warning* symbol ROMBIT61F duplicated
+"../hdl/onewire/onewire_params.v", 591: 
+
+*Warning* symbol ROMBIT61W duplicated
+"../hdl/onewire/onewire_params.v", 592: 
+
+*Warning* symbol ROMBIT62T duplicated
+"../hdl/onewire/onewire_params.v", 593: 
+
+*Warning* symbol ROMBIT62F duplicated
+"../hdl/onewire/onewire_params.v", 594: 
+
+*Warning* symbol ROMBIT62W duplicated
+"../hdl/onewire/onewire_params.v", 595: 
+
+*Warning* symbol ROMBIT63T duplicated
+"../hdl/onewire/onewire_params.v", 596: 
+
+*Warning* symbol ROMBIT63F duplicated
+"../hdl/onewire/onewire_params.v", 597: 
+
+*Warning* symbol ROMBIT63W duplicated
+"../hdl/onewire/onewire_params.v", 598: 
+
+*Warning* symbol THAREG_DEF duplicated
+"../hdl/onewire/onewire_params.v", 601: 
+
+*Warning* symbol THACYC0 duplicated
+"../hdl/onewire/onewire_params.v", 602: 
+
+*Warning* symbol THACYC1 duplicated
+"../hdl/onewire/onewire_params.v", 603: 
+
+*Warning* symbol THACYC2 duplicated
+"../hdl/onewire/onewire_params.v", 604: 
+
+*Warning* symbol THACYC3 duplicated
+"../hdl/onewire/onewire_params.v", 605: 
+
+*Warning* symbol THACYC4 duplicated
+"../hdl/onewire/onewire_params.v", 606: 
+
+*Warning* symbol THACYC5 duplicated
+"../hdl/onewire/onewire_params.v", 607: 
+
+*Warning* symbol THACYC6 duplicated
+"../hdl/onewire/onewire_params.v", 608: 
+
+*Warning* symbol THACYC7 duplicated
+"../hdl/onewire/onewire_params.v", 609: 
+
+*Warning* symbol TLAREG_DEF duplicated
+"../hdl/onewire/onewire_params.v", 612: 
+
+*Warning* symbol TLACYC0 duplicated
+"../hdl/onewire/onewire_params.v", 613: 
+
+*Warning* symbol TLACYC1 duplicated
+"../hdl/onewire/onewire_params.v", 614: 
+
+*Warning* symbol TLACYC2 duplicated
+"../hdl/onewire/onewire_params.v", 615: 
+
+*Warning* symbol TLACYC3 duplicated
+"../hdl/onewire/onewire_params.v", 616: 
+
+*Warning* symbol TLACYC4 duplicated
+"../hdl/onewire/onewire_params.v", 617: 
+
+*Warning* symbol TLACYC5 duplicated
+"../hdl/onewire/onewire_params.v", 618: 
+
+*Warning* symbol TLACYC6 duplicated
+"../hdl/onewire/onewire_params.v", 619: 
+
+*Warning* symbol TLACYC7 duplicated
+"../hdl/onewire/onewire_params.v", 620: 
+
+*Warning* symbol CFGREG_DEF duplicated
+"../hdl/onewire/onewire_params.v", 623: 
+
+*Warning* symbol CFGCYC0 duplicated
+"../hdl/onewire/onewire_params.v", 624: 
+
+*Warning* symbol CFGCYC1 duplicated
+"../hdl/onewire/onewire_params.v", 625: 
+
+*Warning* symbol CFGCYC2 duplicated
+"../hdl/onewire/onewire_params.v", 626: 
+
+*Warning* symbol CFGCYC3 duplicated
+"../hdl/onewire/onewire_params.v", 627: 
+
+*Warning* symbol CFGCYC4 duplicated
+"../hdl/onewire/onewire_params.v", 628: 
+
+*Warning* symbol CFGCYC5 duplicated
+"../hdl/onewire/onewire_params.v", 629: 
+
+*Warning* symbol CFGCYC6 duplicated
+"../hdl/onewire/onewire_params.v", 630: 
+
+*Warning* symbol CFGCYC7 duplicated
+"../hdl/onewire/onewire_params.v", 631: 
+
+*Warning* symbol BYTE0BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 634: 
+
+*Warning* symbol BYTE0BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 635: 
+
+*Warning* symbol BYTE0BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 636: 
+
+*Warning* symbol BYTE0BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 637: 
+
+*Warning* symbol BYTE0BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 638: 
+
+*Warning* symbol BYTE0BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 639: 
+
+*Warning* symbol BYTE0BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 640: 
+
+*Warning* symbol BYTE0BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 641: 
+
+*Warning* symbol BYTE1BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 642: 
+
+*Warning* symbol BYTE1BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 643: 
+
+*Warning* symbol BYTE1BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 644: 
+
+*Warning* symbol BYTE1BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 645: 
+
+*Warning* symbol BYTE1BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 646: 
+
+*Warning* symbol BYTE1BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 647: 
+
+*Warning* symbol BYTE1BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 648: 
+
+*Warning* symbol BYTE1BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 649: 
+
+*Warning* symbol BYTE2BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 650: 
+
+*Warning* symbol BYTE2BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 651: 
+
+*Warning* symbol BYTE2BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 652: 
+
+*Warning* symbol BYTE2BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 653: 
+
+*Warning* symbol BYTE2BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 654: 
+
+*Warning* symbol BYTE2BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 655: 
+
+*Warning* symbol BYTE2BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 656: 
+
+*Warning* symbol BYTE2BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 657: 
+
+*Warning* symbol BYTE3BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 658: 
+
+*Warning* symbol BYTE3BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 659: 
+
+*Warning* symbol BYTE3BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 660: 
+
+*Warning* symbol BYTE3BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 661: 
+
+*Warning* symbol BYTE3BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 662: 
+
+*Warning* symbol BYTE3BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 663: 
+
+*Warning* symbol BYTE3BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 664: 
+
+*Warning* symbol BYTE3BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 665: 
+
+*Warning* symbol BYTE4BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 666: 
+
+*Warning* symbol BYTE4BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 667: 
+
+*Warning* symbol BYTE4BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 668: 
+
+*Warning* symbol BYTE4BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 669: 
+
+*Warning* symbol BYTE4BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 670: 
+
+*Warning* symbol BYTE4BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 671: 
+
+*Warning* symbol BYTE4BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 672: 
+
+*Warning* symbol BYTE4BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 673: 
+
+*Warning* symbol BYTE5BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 674: 
+
+*Warning* symbol BYTE5BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 675: 
+
+*Warning* symbol BYTE5BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 676: 
+
+*Warning* symbol BYTE5BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 677: 
+
+*Warning* symbol BYTE5BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 678: 
+
+*Warning* symbol BYTE5BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 679: 
+
+*Warning* symbol BYTE5BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 680: 
+
+*Warning* symbol BYTE5BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 681: 
+
+*Warning* symbol BYTE6BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 682: 
+
+*Warning* symbol BYTE6BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 683: 
+
+*Warning* symbol BYTE6BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 684: 
+
+*Warning* symbol BYTE6BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 685: 
+
+*Warning* symbol BYTE6BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 686: 
+
+*Warning* symbol BYTE6BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 687: 
+
+*Warning* symbol BYTE6BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 688: 
+
+*Warning* symbol BYTE6BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 689: 
+
+*Warning* symbol BYTE7BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 690: 
+
+*Warning* symbol BYTE7BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 691: 
+
+*Warning* symbol BYTE7BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 692: 
+
+*Warning* symbol BYTE7BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 693: 
+
+*Warning* symbol BYTE7BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 694: 
+
+*Warning* symbol BYTE7BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 695: 
+
+*Warning* symbol BYTE7BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 696: 
+
+*Warning* symbol BYTE7BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 697: 
+
+*Warning* symbol BYTE8BIT0 duplicated
+"../hdl/onewire/onewire_params.v", 698: 
+
+*Warning* symbol BYTE8BIT1 duplicated
+"../hdl/onewire/onewire_params.v", 699: 
+
+*Warning* symbol BYTE8BIT2 duplicated
+"../hdl/onewire/onewire_params.v", 700: 
+
+*Warning* symbol BYTE8BIT3 duplicated
+"../hdl/onewire/onewire_params.v", 701: 
+
+*Warning* symbol BYTE8BIT4 duplicated
+"../hdl/onewire/onewire_params.v", 702: 
+
+*Warning* symbol BYTE8BIT5 duplicated
+"../hdl/onewire/onewire_params.v", 703: 
+
+*Warning* symbol BYTE8BIT6 duplicated
+"../hdl/onewire/onewire_params.v", 704: 
+
+*Warning* symbol BYTE8BIT7 duplicated
+"../hdl/onewire/onewire_params.v", 705: 
+
+*Warning* Module onewire_regfile redefined
+"../hdl/onewire/onewire_regfile.v", 25: 
+Highest level modules:
+tb_onewire
+CRC8_D1
+CRC8_D8
+crc8_lfsr
+
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 3: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 9: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 15: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 21: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 27: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 29: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 35: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 39: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 45: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 49: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 55: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 59: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 67: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 69: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 71: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 80: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 82: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 93: 
+
+*Error* illegal LHS in procedural assignment
+"../tb/onewire_tasks.v", 95: 
+Total	19 error(s),   980 warning(s)

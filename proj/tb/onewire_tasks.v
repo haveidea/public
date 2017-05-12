@@ -25,7 +25,7 @@ endtask
 task RESET_PULSE;
    begin
       `TB_ONEWIRE.DQ_DRIVE = 'b0;
-      #(RSTPULSEMIN*1000);
+      #(`RSTPULSEMIN*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'b1;
    end
 endtask
@@ -33,9 +33,9 @@ endtask
 task WRITE_0_SLOT_MIN;
    begin
       `TB_ONEWIRE.DQ_DRIVE = 'b0;
-      #(TSLOTINITMIN*1000);
-      #(TSLOTINITMAX*1000);
-      #(TSLOTREMMIN*1000);
+      #(`TSLOTINITMIN*1000);
+      #(`TSLOTINITMAX*1000);
+      #(`TSLOTREMMIN*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'b1;
    end
 endtask
@@ -43,9 +43,9 @@ endtask
 task WRITE_0_SLOT_MAX;
    begin
       `TB_ONEWIRE.DQ_DRIVE = 'b0;
-      #(TSLOTINITMIN*1000);
-      #(TSLOTINITMAX*1000);
-      #(TSLOTREMMAX*1000);
+      #(`TSLOTINITMIN*1000);
+      #(`TSLOTINITMAX*1000);
+      #(`TSLOTREMMAX*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'b1;
    end
 endtask
@@ -53,11 +53,11 @@ endtask
 task WRITE_1_SLOT_MIN;
    begin
       `TB_ONEWIRE.DQ_DRIVE = 'b0;
-      #(TSLOTINITMIN*1000);
+      #(`TSLOTINITMIN*1000);
       //`TB_ONEWIRE.DQ_DRIVE = 'bz;
-      #(TSLOTINITMAX*1000);
+      #(`TSLOTINITMAX*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'b1;
-      #(TSLOTREMMIN*1000);
+      #(`TSLOTREMMIN*1000);
       //`TB_ONEWIRE.DQ_DRIVE = 'b1;
    end
 endtask
@@ -65,11 +65,11 @@ endtask
 task WRITE_1_SLOT_MAX;
    begin
       `TB_ONEWIRE.DQ_DRIVE = 'b0;
-      #(TSLOTINITMIN*1000);
+      #(`TSLOTINITMIN*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'bz;
-      #(TSLOTINITMAX*1000);
+      #(`TSLOTINITMAX*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'b1;
-      #(TSLOTREMMAX*1000);
+      #(`TSLOTREMMAX*1000);
       //`TB_ONEWIRE.DQ_DRIVE = 'b1;
    end
 endtask
@@ -78,11 +78,11 @@ task READ_SLOT_MIN;
    output dataout;
    begin
       `TB_ONEWIRE.DQ_DRIVE = 'b0;
-      #(TSLOTINITMIN*1000);
+      #(`TSLOTINITMIN*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'bz;
-      #(TSLOTINITMAX*1000);
+      #(`TSLOTINITMAX*1000);
       dataout = `TB_ONEWIRE.__DQ__;
-      #(TSLOTREMMIN*1000);
+      #(`TSLOTREMMIN*1000);
       //`TB_ONEWIRE.DQ_DRIVE = 'b1;
    end
 endtask
@@ -91,11 +91,11 @@ task READ_SLOT_MAX;
    output dataout;
    begin
       `TB_ONEWIRE.DQ_DRIVE = 'b0;
-      #(TSLOTINITMAX*1000);
+      #(`TSLOTINITMAX*1000);
       `TB_ONEWIRE.DQ_DRIVE = 'bz;
-      #(TSLOTINITMIN*1000);
+      #(`TSLOTINITMIN*1000);
       dataout = `TB_ONEWIRE.__DQ__;
-      #(TSLOTREMMAX*1000);
+      #(`TSLOTREMMAX*1000);
       //`TB_ONEWIRE.DQ_DRIVE = 'b1;
    end
 endtask
@@ -120,7 +120,7 @@ task WRITE_ONE_BYTE;
                WRITE_0_SLOT_MIN;
             end
          end
-	 repeat(1) #(RECOVERYMIN*1000);
+	 repeat(1) #(`RECOVERYMIN*1000);
       end
    end
 endtask

@@ -987,22 +987,22 @@ module onewire_adapter(
    // Presence-Detect High Time: 15us('h024) -> 55us('h084)
    always @(*) begin
       case (owam_ttrim[3:0])
-        4'h0000: ttrim_pdhigh = PDHCYC00; // 15  us
-        4'h0001: ttrim_pdhigh = PDHCYC01; // 17.9us
-        4'h0010: ttrim_pdhigh = PDHCYC02; // 20  us
-        4'h0011: ttrim_pdhigh = PDHCYC03; // 22.1us
-        4'h0100: ttrim_pdhigh = PDHCYC04; // 27.9us
-        4'h0101: ttrim_pdhigh = PDHCYC05; // 29.1us
-        4'h0110: ttrim_pdhigh = PDHCYC06; // 30  us
-        4'h0111: ttrim_pdhigh = PDHCYC07; // 30.8us
-        4'h1000: ttrim_pdhigh = PDHCYC08; // 31.2us
-        4'h1001: ttrim_pdhigh = PDHCYC09; // 32.1us
-        4'h1010: ttrim_pdhigh = PDHCYC10; // 32.9us
-        4'h1011: ttrim_pdhigh = PDHCYC11; // 34.2us
-        4'h1100: ttrim_pdhigh = PDHCYC12; // 35  us
-        4'h1101: ttrim_pdhigh = PDHCYC13; // 40  us
-        4'h1110: ttrim_pdhigh = PDHCYC14; // 47.5us
-        4'h1111: ttrim_pdhigh = PDHCYC15; // 55  us
+        4'b0000: ttrim_pdhigh = PDHCYC00; // 15  us
+        4'b0001: ttrim_pdhigh = PDHCYC01; // 17.9us
+        4'b0010: ttrim_pdhigh = PDHCYC02; // 20  us
+        4'b0011: ttrim_pdhigh = PDHCYC03; // 22.1us
+        4'b0100: ttrim_pdhigh = PDHCYC04; // 27.9us
+        4'b0101: ttrim_pdhigh = PDHCYC05; // 29.1us
+        4'b0110: ttrim_pdhigh = PDHCYC06; // 30  us
+        4'b0111: ttrim_pdhigh = PDHCYC07; // 30.8us
+        4'b1000: ttrim_pdhigh = PDHCYC08; // 31.2us
+        4'b1001: ttrim_pdhigh = PDHCYC09; // 32.1us
+        4'b1010: ttrim_pdhigh = PDHCYC10; // 32.9us
+        4'b1011: ttrim_pdhigh = PDHCYC11; // 34.2us
+        4'b1100: ttrim_pdhigh = PDHCYC12; // 35  us
+        4'b1101: ttrim_pdhigh = PDHCYC13; // 40  us
+        4'b1110: ttrim_pdhigh = PDHCYC14; // 47.5us
+        4'b1111: ttrim_pdhigh = PDHCYC15; // 55  us
         default: ttrim_pdhigh = PDHCYC09; // 32.1us
       endcase
    end
@@ -1013,22 +1013,22 @@ module onewire_adapter(
    // Presence-Detect Low Time: 60us('h090) -> 220us('h210)
    always @(*) begin
       case (owam_ttrim[3:0])
-        4'h0000: ttrim_pdlow = PDLCYC00; // 60   us
-        4'h0001: ttrim_pdlow = PDLCYC01; // 70   us
-        4'h0010: ttrim_pdlow = PDLCYC02; // 80   us
-        4'h0011: ttrim_pdlow = PDLCYC03; // 90   us
-        4'h0100: ttrim_pdlow = PDLCYC04; // 100  us
-        4'h0101: ttrim_pdlow = PDLCYC05; // 102.1us
-        4'h0110: ttrim_pdlow = PDLCYC06; // 103.8us
-        4'h0111: ttrim_pdlow = PDLCYC07; // 105.8us
-        4'h1000: ttrim_pdlow = PDLCYC08; // 107.9us
-        4'h1001: ttrim_pdlow = PDLCYC09; // 110  us
-        4'h1010: ttrim_pdlow = PDLCYC10; // 112.5us
-        4'h1011: ttrim_pdlow = PDLCYC11; // 115  us
-        4'h1100: ttrim_pdlow = PDLCYC12; // 117.5us
-        4'h1101: ttrim_pdlow = PDLCYC13; // 120  us
-        4'h1110: ttrim_pdlow = PDLCYC14; // 200  us
-        4'h1111: ttrim_pdlow = PDLCYC15; // 220  us
+        4'b0000: ttrim_pdlow = PDLCYC00; // 60   us
+        4'b0001: ttrim_pdlow = PDLCYC01; // 70   us
+        4'b0010: ttrim_pdlow = PDLCYC02; // 80   us
+        4'b0011: ttrim_pdlow = PDLCYC03; // 90   us
+        4'b0100: ttrim_pdlow = PDLCYC04; // 100  us
+        4'b0101: ttrim_pdlow = PDLCYC05; // 102.1us
+        4'b0110: ttrim_pdlow = PDLCYC06; // 103.8us
+        4'b0111: ttrim_pdlow = PDLCYC07; // 105.8us
+        4'b1000: ttrim_pdlow = PDLCYC08; // 107.9us
+        4'b1001: ttrim_pdlow = PDLCYC09; // 110  us
+        4'b1010: ttrim_pdlow = PDLCYC10; // 112.5us
+        4'b1011: ttrim_pdlow = PDLCYC11; // 115  us
+        4'b1100: ttrim_pdlow = PDLCYC12; // 117.5us
+        4'b1101: ttrim_pdlow = PDLCYC13; // 120  us
+        4'b1110: ttrim_pdlow = PDLCYC14; // 200  us
+        4'b1111: ttrim_pdlow = PDLCYC15; // 220  us
         default: ttrim_pdlow = PDLCYC09; // 110  us
       endcase
    end
@@ -1039,22 +1039,22 @@ module onewire_adapter(
    // Reset-pulse Low Detect Time: 180us('h1b0) -> 440us('h420)
    always @(*) begin
       case (owam_ttrim[7:4])
-        4'h0000: ttrim_rpldet = RLDCYC00; // 180us
-        4'h0001: ttrim_rpldet = RLDCYC01; // 200us
-        4'h0010: ttrim_rpldet = RLDCYC02; // 210us
-        4'h0011: ttrim_rpldet = RLDCYC03; // 220us
-        4'h0100: ttrim_rpldet = RLDCYC04; // 225us
-        4'h0101: ttrim_rpldet = RLDCYC05; // 230us
-        4'h0110: ttrim_rpldet = RLDCYC06; // 235us
-        4'h0111: ttrim_rpldet = RLDCYC07; // 240us
-        4'h1000: ttrim_rpldet = RLDCYC08; // 245us
-        4'h1001: ttrim_rpldet = RLDCYC09; // 250us
-        4'h1010: ttrim_rpldet = RLDCYC10; // 255us
-        4'h1011: ttrim_rpldet = RLDCYC11; // 260us
-        4'h1100: ttrim_rpldet = RLDCYC12; // 270us
-        4'h1101: ttrim_rpldet = RLDCYC13; // 360us
-        4'h1110: ttrim_rpldet = RLDCYC14; // 400us
-        4'h1111: ttrim_rpldet = RLDCYC15; // 440us
+        4'b0000: ttrim_rpldet = RLDCYC00; // 180us
+        4'b0001: ttrim_rpldet = RLDCYC01; // 200us
+        4'b0010: ttrim_rpldet = RLDCYC02; // 210us
+        4'b0011: ttrim_rpldet = RLDCYC03; // 220us
+        4'b0100: ttrim_rpldet = RLDCYC04; // 225us
+        4'b0101: ttrim_rpldet = RLDCYC05; // 230us
+        4'b0110: ttrim_rpldet = RLDCYC06; // 235us
+        4'b0111: ttrim_rpldet = RLDCYC07; // 240us
+        4'b1000: ttrim_rpldet = RLDCYC08; // 245us
+        4'b1001: ttrim_rpldet = RLDCYC09; // 250us
+        4'b1010: ttrim_rpldet = RLDCYC10; // 255us
+        4'b1011: ttrim_rpldet = RLDCYC11; // 260us
+        4'b1100: ttrim_rpldet = RLDCYC12; // 270us
+        4'b1101: ttrim_rpldet = RLDCYC13; // 360us
+        4'b1110: ttrim_rpldet = RLDCYC14; // 400us
+        4'b1111: ttrim_rpldet = RLDCYC15; // 440us
         default: ttrim_rpldet = RLDCYC08; // 245us
       endcase
    end
@@ -1262,22 +1262,22 @@ module onewire_adapter(
    // Read-data Pulling High Time: 11.2us('h01b) -> 40us('h060)
    always @(*) begin
       case (owam_ttrim[11:8])
-        4'h0000: ttrim_rphigh = RPHCYC00; // 11.2us
-        4'h0001: ttrim_rphigh = RPHCYC01; // 12.5us
-        4'h0010: ttrim_rphigh = RPHCYC02; // 13.7us
-        4'h0011: ttrim_rphigh = RPHCYC03; // 15  us
-        4'h0100: ttrim_rphigh = RPHCYC04; // 15.8us
-        4'h0101: ttrim_rphigh = RPHCYC05; // 16.6us
-        4'h0110: ttrim_rphigh = RPHCYC06; // 17.5us
-        4'h0111: ttrim_rphigh = RPHCYC07; // 18.3us
-        4'h1000: ttrim_rphigh = RPHCYC08; // 19.1us
-        4'h1001: ttrim_rphigh = RPHCYC09; // 20  us
-        4'h1010: ttrim_rphigh = RPHCYC10; // 23.3us
-        4'h1011: ttrim_rphigh = RPHCYC11; // 26.6us
-        4'h1100: ttrim_rphigh = RPHCYC12; // 30  us
-        4'h1101: ttrim_rphigh = RPHCYC13; // 33.3us
-        4'h1110: ttrim_rphigh = RPHCYC14; // 36.6us
-        4'h1111: ttrim_rphigh = RPHCYC15; // 40  us
+        4'b0000: ttrim_rphigh = RPHCYC00; // 11.2us
+        4'b0001: ttrim_rphigh = RPHCYC01; // 12.5us
+        4'b0010: ttrim_rphigh = RPHCYC02; // 13.7us
+        4'b0011: ttrim_rphigh = RPHCYC03; // 15  us
+        4'b0100: ttrim_rphigh = RPHCYC04; // 15.8us
+        4'b0101: ttrim_rphigh = RPHCYC05; // 16.6us
+        4'b0110: ttrim_rphigh = RPHCYC06; // 17.5us
+        4'b0111: ttrim_rphigh = RPHCYC07; // 18.3us
+        4'b1000: ttrim_rphigh = RPHCYC08; // 19.1us
+        4'b1001: ttrim_rphigh = RPHCYC09; // 20  us
+        4'b1010: ttrim_rphigh = RPHCYC10; // 23.3us
+        4'b1011: ttrim_rphigh = RPHCYC11; // 26.6us
+        4'b1100: ttrim_rphigh = RPHCYC12; // 30  us
+        4'b1101: ttrim_rphigh = RPHCYC13; // 33.3us
+        4'b1110: ttrim_rphigh = RPHCYC14; // 36.6us
+        4'b1111: ttrim_rphigh = RPHCYC15; // 40  us
         default: ttrim_rphigh = RPHCYC09; // 20  us
       endcase
    end
@@ -1288,22 +1288,22 @@ module onewire_adapter(
    // Nirvana Pulling High Time: 11.2us('h01f) -> 40us('h064)
    always @(*) begin
       case (owam_ttrim[11:8])
-        4'h0000: ttrim_nphigh = NPHCYC00; // 12.9us
-        4'h0001: ttrim_nphigh = NPHCYC01; // 14.1us
-        4'h0010: ttrim_nphigh = NPHCYC02; // 15.4us
-        4'h0011: ttrim_nphigh = NPHCYC03; // 16.6us
-        4'h0100: ttrim_nphigh = NPHCYC04; // 17.5us
-        4'h0101: ttrim_nphigh = NPHCYC05; // 18.3us
-        4'h0110: ttrim_nphigh = NPHCYC06; // 19.1us
-        4'h0111: ttrim_nphigh = NPHCYC07; // 20  us
-        4'h1000: ttrim_nphigh = NPHCYC08; // 20.8us
-        4'h1001: ttrim_nphigh = NPHCYC09; // 21.6us
-        4'h1010: ttrim_nphigh = NPHCYC10; // 25  us
-        4'h1011: ttrim_nphigh = NPHCYC11; // 28.3us
-        4'h1100: ttrim_nphigh = NPHCYC12; // 31.6us
-        4'h1101: ttrim_nphigh = NPHCYC13; // 35  us
-        4'h1110: ttrim_nphigh = NPHCYC14; // 38.3us
-        4'h1111: ttrim_nphigh = NPHCYC15; // 41.6us
+        4'b0000: ttrim_nphigh = NPHCYC00; // 12.9us
+        4'b0001: ttrim_nphigh = NPHCYC01; // 14.1us
+        4'b0010: ttrim_nphigh = NPHCYC02; // 15.4us
+        4'b0011: ttrim_nphigh = NPHCYC03; // 16.6us
+        4'b0100: ttrim_nphigh = NPHCYC04; // 17.5us
+        4'b0101: ttrim_nphigh = NPHCYC05; // 18.3us
+        4'b0110: ttrim_nphigh = NPHCYC06; // 19.1us
+        4'b0111: ttrim_nphigh = NPHCYC07; // 20  us
+        4'b1000: ttrim_nphigh = NPHCYC08; // 20.8us
+        4'b1001: ttrim_nphigh = NPHCYC09; // 21.6us
+        4'b1010: ttrim_nphigh = NPHCYC10; // 25  us
+        4'b1011: ttrim_nphigh = NPHCYC11; // 28.3us
+        4'b1100: ttrim_nphigh = NPHCYC12; // 31.6us
+        4'b1101: ttrim_nphigh = NPHCYC13; // 35  us
+        4'b1110: ttrim_nphigh = NPHCYC14; // 38.3us
+        4'b1111: ttrim_nphigh = NPHCYC15; // 41.6us
         default: ttrim_nphigh = NPHCYC09; // 21.6us
       endcase
    end
@@ -1314,22 +1314,22 @@ module onewire_adapter(
    // Read-data Pulling Low Time: 20us('h030) -> 110us('h108)
    always @(*) begin
       case (owam_ttrim[11:8])
-        4'h0000: ttrim_rplow = RPLCYC00; // 20  us
-        4'h0001: ttrim_rplow = RPLCYC01; // 22.9us
-        4'h0010: ttrim_rplow = RPLCYC02; // 25.8us
-        4'h0011: ttrim_rplow = RPLCYC03; // 29.1us
-        4'h0100: ttrim_rplow = RPLCYC04; // 32.1us
-        4'h0101: ttrim_rplow = RPLCYC05; // 37.9us
-        4'h0110: ttrim_rplow = RPLCYC06; // 43.7us
-        4'h0111: ttrim_rplow = RPLCYC07; // 49.1us
-        4'h1000: ttrim_rplow = RPLCYC08; // 54.6us
-        4'h1001: ttrim_rplow = RPLCYC09; // 60  us
-        4'h1010: ttrim_rplow = RPLCYC10; // 68.3us
-        4'h1011: ttrim_rplow = RPLCYC11; // 76.6us
-        4'h1100: ttrim_rplow = RPLCYC12; // 85  us
-        4'h1101: ttrim_rplow = RPLCYC13; // 93.3us
-        4'h1110: ttrim_rplow = RPLCYC14; //101.6us
-        4'h1111: ttrim_rplow = RPLCYC15; //110  us
+        4'b0000: ttrim_rplow = RPLCYC00; // 20  us
+        4'b0001: ttrim_rplow = RPLCYC01; // 22.9us
+        4'b0010: ttrim_rplow = RPLCYC02; // 25.8us
+        4'b0011: ttrim_rplow = RPLCYC03; // 29.1us
+        4'b0100: ttrim_rplow = RPLCYC04; // 32.1us
+        4'b0101: ttrim_rplow = RPLCYC05; // 37.9us
+        4'b0110: ttrim_rplow = RPLCYC06; // 43.7us
+        4'b0111: ttrim_rplow = RPLCYC07; // 49.1us
+        4'b1000: ttrim_rplow = RPLCYC08; // 54.6us
+        4'b1001: ttrim_rplow = RPLCYC09; // 60  us
+        4'b1010: ttrim_rplow = RPLCYC10; // 68.3us
+        4'b1011: ttrim_rplow = RPLCYC11; // 76.6us
+        4'b1100: ttrim_rplow = RPLCYC12; // 85  us
+        4'b1101: ttrim_rplow = RPLCYC13; // 93.3us
+        4'b1110: ttrim_rplow = RPLCYC14; //101.6us
+        4'b1111: ttrim_rplow = RPLCYC15; //110  us
         default: ttrim_rplow = RPLCYC09; // 60  us
       endcase
    end
@@ -1340,22 +1340,22 @@ module onewire_adapter(
    // Nirvana Pulling Low Time: 21.6us('h034) -> 111.7us('h10c)
    always @(*) begin
       case (owam_ttrim[11:8])
-        4'h0000: ttrim_nplow = NPLCYC00; // 21.6us
-        4'h0001: ttrim_nplow = NPLCYC01; // 24.6us
-        4'h0010: ttrim_nplow = NPLCYC02; // 27.5us
-        4'h0011: ttrim_nplow = NPLCYC03; // 30.8us
-        4'h0100: ttrim_nplow = NPLCYC04; // 33.7us
-        4'h0101: ttrim_nplow = NPLCYC05; // 39.6us
-        4'h0110: ttrim_nplow = NPLCYC06; // 45.4us
-        4'h0111: ttrim_nplow = NPLCYC07; // 50.8us
-        4'h1000: ttrim_nplow = NPLCYC08; // 56.2us
-        4'h1001: ttrim_nplow = NPLCYC09; // 61.6us
-        4'h1010: ttrim_nplow = NPLCYC10; // 70  us
-        4'h1011: ttrim_nplow = NPLCYC11; // 78.3us
-        4'h1100: ttrim_nplow = NPLCYC12; // 86.6us
-        4'h1101: ttrim_nplow = NPLCYC13; // 95  us
-        4'h1110: ttrim_nplow = NPLCYC14; //103.3us
-        4'h1111: ttrim_nplow = NPLCYC15; //111.7us
+        4'b0000: ttrim_nplow = NPLCYC00; // 21.6us
+        4'b0001: ttrim_nplow = NPLCYC01; // 24.6us
+        4'b0010: ttrim_nplow = NPLCYC02; // 27.5us
+        4'b0011: ttrim_nplow = NPLCYC03; // 30.8us
+        4'b0100: ttrim_nplow = NPLCYC04; // 33.7us
+        4'b0101: ttrim_nplow = NPLCYC05; // 39.6us
+        4'b0110: ttrim_nplow = NPLCYC06; // 45.4us
+        4'b0111: ttrim_nplow = NPLCYC07; // 50.8us
+        4'b1000: ttrim_nplow = NPLCYC08; // 56.2us
+        4'b1001: ttrim_nplow = NPLCYC09; // 61.6us
+        4'b1010: ttrim_nplow = NPLCYC10; // 70  us
+        4'b1011: ttrim_nplow = NPLCYC11; // 78.3us
+        4'b1100: ttrim_nplow = NPLCYC12; // 86.6us
+        4'b1101: ttrim_nplow = NPLCYC13; // 95  us
+        4'b1110: ttrim_nplow = NPLCYC14; //103.3us
+        4'b1111: ttrim_nplow = NPLCYC15; //111.7us
         default: ttrim_nplow = NPLCYC09; // 61.6us
       endcase
    end
@@ -2039,22 +2039,22 @@ module onewire_adapter(
    // Sample Window Tick: 11.6us('h01c) -> 89.1us('h0d6)
    always @(*) begin
       case (owam_ttrim[15:12])
-        4'h0000: ttrim_swtick = SWTCYC00; // 11.6us
-        4'h0001: ttrim_swtick = SWTCYC01; // 14.1us
-        4'h0010: ttrim_swtick = SWTCYC02; // 16.6us
-        4'h0011: ttrim_swtick = SWTCYC03; // 19.1us
-        4'h0100: ttrim_swtick = SWTCYC04; // 21.6us
-        4'h0101: ttrim_swtick = SWTCYC05; // 24.1us
-        4'h0110: ttrim_swtick = SWTCYC06; // 26.6us
-        4'h0111: ttrim_swtick = SWTCYC07; // 29.1us
-        4'h1000: ttrim_swtick = SWTCYC08; // 31.2us
-        4'h1001: ttrim_swtick = SWTCYC09; // 33.7us
-        4'h1010: ttrim_swtick = SWTCYC10; // 36.2us
-        4'h1011: ttrim_swtick = SWTCYC11; // 39.1us
-        4'h1100: ttrim_swtick = SWTCYC12; // 49.1us
-        4'h1101: ttrim_swtick = SWTCYC13; // 59.1us
-        4'h1110: ttrim_swtick = SWTCYC14; // 69.1us
-        4'h1111: ttrim_swtick = SWTCYC15; // 89.1us
+        4'b0000: ttrim_swtick = SWTCYC00; // 11.6us
+        4'b0001: ttrim_swtick = SWTCYC01; // 14.1us
+        4'b0010: ttrim_swtick = SWTCYC02; // 16.6us
+        4'b0011: ttrim_swtick = SWTCYC03; // 19.1us
+        4'b0100: ttrim_swtick = SWTCYC04; // 21.6us
+        4'b0101: ttrim_swtick = SWTCYC05; // 24.1us
+        4'b0110: ttrim_swtick = SWTCYC06; // 26.6us
+        4'b0111: ttrim_swtick = SWTCYC07; // 29.1us
+        4'b1000: ttrim_swtick = SWTCYC08; // 31.2us
+        4'b1001: ttrim_swtick = SWTCYC09; // 33.7us
+        4'b1010: ttrim_swtick = SWTCYC10; // 36.2us
+        4'b1011: ttrim_swtick = SWTCYC11; // 39.1us
+        4'b1100: ttrim_swtick = SWTCYC12; // 49.1us
+        4'b1101: ttrim_swtick = SWTCYC13; // 59.1us
+        4'b1110: ttrim_swtick = SWTCYC14; // 69.1us
+        4'b1111: ttrim_swtick = SWTCYC15; // 89.1us
         default: ttrim_swtick = SWTCYC08; // 31.2us
       endcase
    end
@@ -2065,22 +2065,22 @@ module onewire_adapter(
    // Sample Datum Process: 12.1us('h01d) -> 89.6us('h0d7)
    always @(*) begin
       case (owam_ttrim[15:12])
-        4'h0000: ttrim_sdproc = SDPCYC00; // 12.1us
-        4'h0001: ttrim_sdproc = SDPCYC01; // 14.6us
-        4'h0010: ttrim_sdproc = SDPCYC02; // 17.1us
-        4'h0011: ttrim_sdproc = SDPCYC03; // 19.6us
-        4'h0100: ttrim_sdproc = SDPCYC04; // 22.1us
-        4'h0101: ttrim_sdproc = SDPCYC05; // 24.6us
-        4'h0110: ttrim_sdproc = SDPCYC06; // 27.1us
-        4'h0111: ttrim_sdproc = SDPCYC07; // 29.6us
-        4'h1000: ttrim_sdproc = SDPCYC08; // 31.6us
-        4'h1001: ttrim_sdproc = SDPCYC09; // 34.1us
-        4'h1010: ttrim_sdproc = SDPCYC10; // 36.6us
-        4'h1011: ttrim_sdproc = SDPCYC11; // 39.6us
-        4'h1100: ttrim_sdproc = SDPCYC12; // 49.6us
-        4'h1101: ttrim_sdproc = SDPCYC13; // 59.6us
-        4'h1110: ttrim_sdproc = SDPCYC14; // 69.6us
-        4'h1111: ttrim_sdproc = SDPCYC15; // 89.6us
+        4'b0000: ttrim_sdproc = SDPCYC00; // 12.1us
+        4'b0001: ttrim_sdproc = SDPCYC01; // 14.6us
+        4'b0010: ttrim_sdproc = SDPCYC02; // 17.1us
+        4'b0011: ttrim_sdproc = SDPCYC03; // 19.6us
+        4'b0100: ttrim_sdproc = SDPCYC04; // 22.1us
+        4'b0101: ttrim_sdproc = SDPCYC05; // 24.6us
+        4'b0110: ttrim_sdproc = SDPCYC06; // 27.1us
+        4'b0111: ttrim_sdproc = SDPCYC07; // 29.6us
+        4'b1000: ttrim_sdproc = SDPCYC08; // 31.6us
+        4'b1001: ttrim_sdproc = SDPCYC09; // 34.1us
+        4'b1010: ttrim_sdproc = SDPCYC10; // 36.6us
+        4'b1011: ttrim_sdproc = SDPCYC11; // 39.6us
+        4'b1100: ttrim_sdproc = SDPCYC12; // 49.6us
+        4'b1101: ttrim_sdproc = SDPCYC13; // 59.6us
+        4'b1110: ttrim_sdproc = SDPCYC14; // 69.6us
+        4'b1111: ttrim_sdproc = SDPCYC15; // 89.6us
         default: ttrim_sdproc = SDPCYC08; // 31.6us
       endcase
    end
@@ -2091,22 +2091,22 @@ module onewire_adapter(
    // Sample Process Karma: 12.5us('h01e) -> 90us('h0d8)
    always @(*) begin
       case (owam_ttrim[15:12])
-        4'h0000: ttrim_spkarm = SPKCYC00; // 12.5us
-        4'h0001: ttrim_spkarm = SPKCYC01; // 15  us
-        4'h0010: ttrim_spkarm = SPKCYC02; // 17.5us
-        4'h0011: ttrim_spkarm = SPKCYC03; // 20  us
-        4'h0100: ttrim_spkarm = SPKCYC04; // 22.5us
-        4'h0101: ttrim_spkarm = SPKCYC05; // 25  us
-        4'h0110: ttrim_spkarm = SPKCYC06; // 27.5us
-        4'h0111: ttrim_spkarm = SPKCYC07; // 30  us
-        4'h1000: ttrim_spkarm = SPKCYC08; // 32.1us
-        4'h1001: ttrim_spkarm = SPKCYC09; // 34.6us
-        4'h1010: ttrim_spkarm = SPKCYC10; // 37.1us
-        4'h1011: ttrim_spkarm = SPKCYC11; // 40  us
-        4'h1100: ttrim_spkarm = SPKCYC12; // 50  us
-        4'h1101: ttrim_spkarm = SPKCYC13; // 60  us
-        4'h1110: ttrim_spkarm = SPKCYC14; // 70  us
-        4'h1111: ttrim_spkarm = SPKCYC15; // 90  us
+        4'b0000: ttrim_spkarm = SPKCYC00; // 12.5us
+        4'b0001: ttrim_spkarm = SPKCYC01; // 15  us
+        4'b0010: ttrim_spkarm = SPKCYC02; // 17.5us
+        4'b0011: ttrim_spkarm = SPKCYC03; // 20  us
+        4'b0100: ttrim_spkarm = SPKCYC04; // 22.5us
+        4'b0101: ttrim_spkarm = SPKCYC05; // 25  us
+        4'b0110: ttrim_spkarm = SPKCYC06; // 27.5us
+        4'b0111: ttrim_spkarm = SPKCYC07; // 30  us
+        4'b1000: ttrim_spkarm = SPKCYC08; // 32.1us
+        4'b1001: ttrim_spkarm = SPKCYC09; // 34.6us
+        4'b1010: ttrim_spkarm = SPKCYC10; // 37.1us
+        4'b1011: ttrim_spkarm = SPKCYC11; // 40  us
+        4'b1100: ttrim_spkarm = SPKCYC12; // 50  us
+        4'b1101: ttrim_spkarm = SPKCYC13; // 60  us
+        4'b1110: ttrim_spkarm = SPKCYC14; // 70  us
+        4'b1111: ttrim_spkarm = SPKCYC15; // 90  us
         default: ttrim_spkarm = SPKCYC08; // 32.1us
       endcase
    end
@@ -2706,22 +2706,22 @@ module onewire_adapter(
    // Pulling High Process Time: 10.8us('h01a) -> 39.6us('h05f)
    always @(*) begin
       case (owam_ttrim[11:8])
-        4'h0000: ttrim_phproc = PHPCYC00; // 10.8us
-        4'h0001: ttrim_phproc = PHPCYC01; // 12.1us
-        4'h0010: ttrim_phproc = PHPCYC02; // 13.3us
-        4'h0011: ttrim_phproc = PHPCYC03; // 14.6us
-        4'h0100: ttrim_phproc = PHPCYC04; // 15.4us
-        4'h0101: ttrim_phproc = PHPCYC05; // 16.2us
-        4'h0110: ttrim_phproc = PHPCYC06; // 17.1us
-        4'h0111: ttrim_phproc = PHPCYC07; // 17.9us
-        4'h1000: ttrim_phproc = PHPCYC08; // 18.7us
-        4'h1001: ttrim_phproc = PHPCYC09; // 19.6us
-        4'h1010: ttrim_phproc = PHPCYC10; // 22.9us
-        4'h1011: ttrim_phproc = PHPCYC11; // 26.2us
-        4'h1100: ttrim_phproc = PHPCYC12; // 29.6us
-        4'h1101: ttrim_phproc = PHPCYC13; // 32.9us
-        4'h1110: ttrim_phproc = PHPCYC14; // 36.2us
-        4'h1111: ttrim_phproc = PHPCYC15; // 39.6us
+        4'b0000: ttrim_phproc = PHPCYC00; // 10.8us
+        4'b0001: ttrim_phproc = PHPCYC01; // 12.1us
+        4'b0010: ttrim_phproc = PHPCYC02; // 13.3us
+        4'b0011: ttrim_phproc = PHPCYC03; // 14.6us
+        4'b0100: ttrim_phproc = PHPCYC04; // 15.4us
+        4'b0101: ttrim_phproc = PHPCYC05; // 16.2us
+        4'b0110: ttrim_phproc = PHPCYC06; // 17.1us
+        4'b0111: ttrim_phproc = PHPCYC07; // 17.9us
+        4'b1000: ttrim_phproc = PHPCYC08; // 18.7us
+        4'b1001: ttrim_phproc = PHPCYC09; // 19.6us
+        4'b1010: ttrim_phproc = PHPCYC10; // 22.9us
+        4'b1011: ttrim_phproc = PHPCYC11; // 26.2us
+        4'b1100: ttrim_phproc = PHPCYC12; // 29.6us
+        4'b1101: ttrim_phproc = PHPCYC13; // 32.9us
+        4'b1110: ttrim_phproc = PHPCYC14; // 36.2us
+        4'b1111: ttrim_phproc = PHPCYC15; // 39.6us
         default: ttrim_phproc = PHPCYC09; // 19.6us
       endcase
    end
@@ -2732,22 +2732,22 @@ module onewire_adapter(
    // Pulling Low Process Time: 19.6us('h02f) -> 109.6us('h107)
    always @(*) begin
       case (owam_ttrim[11:8])
-        4'h0000: ttrim_plproc = PLPCYC00; // 19.6us
-        4'h0001: ttrim_plproc = PLPCYC01; // 22.5us
-        4'h0010: ttrim_plproc = PLPCYC02; // 25.4us
-        4'h0011: ttrim_plproc = PLPCYC03; // 28.7us
-        4'h0100: ttrim_plproc = PLPCYC04; // 32.6us
-        4'h0101: ttrim_plproc = PLPCYC05; // 37.5us
-        4'h0110: ttrim_plproc = PLPCYC06; // 43.3us
-        4'h0111: ttrim_plproc = PLPCYC07; // 48.7us
-        4'h1000: ttrim_plproc = PLPCYC08; // 54.1us
-        4'h1001: ttrim_plproc = PLPCYC09; // 59.6us
-        4'h1010: ttrim_plproc = PLPCYC10; // 67.9us
-        4'h1011: ttrim_plproc = PLPCYC11; // 76.2us
-        4'h1100: ttrim_plproc = PLPCYC12; // 84.6us
-        4'h1101: ttrim_plproc = PLPCYC13; // 92.9us
-        4'h1110: ttrim_plproc = PLPCYC14; //101.2us
-        4'h1111: ttrim_plproc = PLPCYC15; //109.6us
+        4'b0000: ttrim_plproc = PLPCYC00; // 19.6us
+        4'b0001: ttrim_plproc = PLPCYC01; // 22.5us
+        4'b0010: ttrim_plproc = PLPCYC02; // 25.4us
+        4'b0011: ttrim_plproc = PLPCYC03; // 28.7us
+        4'b0100: ttrim_plproc = PLPCYC04; // 32.6us
+        4'b0101: ttrim_plproc = PLPCYC05; // 37.5us
+        4'b0110: ttrim_plproc = PLPCYC06; // 43.3us
+        4'b0111: ttrim_plproc = PLPCYC07; // 48.7us
+        4'b1000: ttrim_plproc = PLPCYC08; // 54.1us
+        4'b1001: ttrim_plproc = PLPCYC09; // 59.6us
+        4'b1010: ttrim_plproc = PLPCYC10; // 67.9us
+        4'b1011: ttrim_plproc = PLPCYC11; // 76.2us
+        4'b1100: ttrim_plproc = PLPCYC12; // 84.6us
+        4'b1101: ttrim_plproc = PLPCYC13; // 92.9us
+        4'b1110: ttrim_plproc = PLPCYC14; //101.2us
+        4'b1111: ttrim_plproc = PLPCYC15; //109.6us
         default: ttrim_plproc = PLPCYC09; // 59.6us
       endcase
    end

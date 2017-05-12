@@ -1,0 +1,129 @@
+10       
+0 onewire_define.v
+0 /edatools/synopsys/vcsmx_201403_installed/etc/systemverilog/onewire_define.v
+0 ../hdl/adcfilter/onewire_define.v
+0 onewire_params.v
+0 /edatools/synopsys/vcsmx_201403_installed/etc/systemverilog/onewire_params.v
+0 ../hdl/adcfilter/onewire_params.v
+0 onewire_tasks.v
+0 /edatools/synopsys/vcsmx_201403_installed/etc/systemverilog/onewire_tasks.v
+0 ../hdl/adcfilter/onewire_tasks.v
+0 ../hdl/onewire/onewire_tasks.v
+21
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -fPIC -O -I/edatools/synopsys/vcsmx_201403_installed/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=-m32 -m32
+-Mobjects= /edatools/synopsys/vcsmx_201403_installed/linux/lib/libvirsim.so /edatools/synopsys/vcsmx_201403_installed/linux/lib/librterrorinf.so /edatools/synopsys/vcsmx_201403_installed/linux/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/edatools/synopsys/vcsmx_201403_installed/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/edatools/synopsys/vcsmx_201403_installed/linux/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-f flist.f
+-gen_obj
+-l
+-picarchive
+-sverilog
+/edatools/synopsys/vcsmx_201403_installed/linux/bin/vcs1
+vcs.log
+73
+sysc_uni_pwd=/home/haveidea/2222/proj/run
+XMODIFIERS=@im=none
+XDG_VTNR=1
+XDG_SESSION_ID=1
+XDG_SESSION_DESKTOP=1-kde-plasma-standard
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=kde4-
+XDG_DATA_DIRS=/usr/share/kde-settings/kde-profile/default/share:/usr/local/share:/usr/share
+XDG_CURRENT_DESKTOP=KDE
+XCURSOR_THEME=Adwaita
+XAUTHORITY=/tmp/kde-haveidea/xauth-1000-_0
+WINDOWPATH=1
+VMR_MODE_FLAG=32
+VERDI_HOME=/edatools/novas/Verdi
+VCS_MX_HOME_INTERNAL=1
+VCS_LOG_FILE=vcs.log
+VCS_HOME=/edatools/synopsys/vcsmx_201403_installed
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH_OVERRIDE=linux
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+USERNAME=haveidea
+UNAME=/bin/uname
+TOOL_HOME=/edatools/synopsys/vcsmx_201403_installed/linux
+SSH_AUTH_SOCK=/tmp/ssh-QJKqlU3gDzSq/agent.2032
+SSH_ASKPASS=/usr/bin/ksshaskpass
+SSH_AGENT_PID=2195
+SHELL_SESSION_ID=b1d327d89f0c4000a7fbb5e047102e40
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2285,unix/unix:/tmp/.ICE-unix/2285
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RISCV_TOP=/home/haveidea/work
+RISCV=/home/haveidea/work/riscv
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins:/home/haveidea/.kde/lib64/kde4/plugins/:/usr/lib64/kde4/plugins/
+QT_IM_MODULE=xim
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PROFILEHOME=/home/haveidea
+PERL_MM_OPT=INSTALL_BASE=/home/haveidea/perl5
+PERL_MB_OPT=--install_base /home/haveidea/perl5
+PERL_LOCAL_LIB_ROOT=:/home/haveidea/perl5
+PERL5LIB=/home/haveidea/perl5/lib/perl5:
+OVA_UUM=0
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KONSOLE_PROFILE_NAME=
+KONSOLE_DBUS_WINDOW=/Windows/1
+KONSOLE_DBUS_SESSION=/Sessions/1
+KONSOLE_DBUS_SERVICE=:1.85
+KDE_SESSION_VERSION=4
+KDE_SESSION_UID=1000
+KDE_MULTIHEAD=false
+KDE_FULL_SESSION=true
+KDEDIRS=/usr
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+HISTCONTROL=ignoredups
+GTK_IM_MODULE=gtk-im-context-simple
+GTK2_RC_FILES=/home/haveidea/.gtkrc-2.0-kde4
+GS_LIB=
+GDM_LANG=en_US.UTF-8
+GDMSESSION=1-kde-plasma-standard
+DESKTOP_SESSION=1-kde-plasma-standard
+DC_HOME=/edatools/synopsys/dc_compiler_201303
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-dGDeaQrj3j,guid=390d0de835fb447dfd487e4e59154316
+COLORFGBG=15;0
+0
+14
+1494565809 ../tb/onewire_tasks.v
+1494562953 ../hdl/onewire/onewire_params.v
+1494562953 ../hdl/onewire/onewire_regfile.v
+1494565385 ../hdl/onewire/onewire_define.v
+1494565339 ../hdl/onewire/onewire_primitive.v
+1494562953 ../hdl/onewire/onewire_comparator.v
+1494566450 ../hdl/onewire/onewire_adapter.v
+1494562953 ../hdl/onewire/crc8_lfsr.v
+1494562953 ../hdl/onewire/crc8_func.v
+1494562953 ../hdl/onewire/CRC8_D8.v
+1494562953 ../hdl/onewire/CRC8_D1.v
+1494562985 ../hdl/adcfilter/sinc3_filter.v
+1494566229 ../tb/tb_onewire.v
+1494566060 flist.f
+4
+0 
+1393563123 /edatools/synopsys/vcsmx_201403_installed/linux/lib/libvirsim.so
+1393562941 /edatools/synopsys/vcsmx_201403_installed/linux/lib/librterrorinf.so
+1393562829 /edatools/synopsys/vcsmx_201403_installed/linux/lib/libsnpsmalloc.so
+1494566493 simv.daidir

@@ -9,6 +9,8 @@ module crc8_lfsr(
   input clk);
 
   reg [7:0] lfsr_q,lfsr_c;
+
+  wire [7:0] crc_out;
   assign crc_out = lfsr_q;
 
   always @(*) begin

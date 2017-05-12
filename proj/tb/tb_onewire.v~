@@ -23,12 +23,13 @@
 `timescale 1 ns / 100 ps // timescale for following module
 //*******************************************************************--
 `include "onewire_define.v"
-//`include "onewire_comparator.v"
-//`include "onewire_adapter.v"
-//`include "onewire_regfile.v"
+`include "onewire_params.v"
+`include "onewire_tasks.v"
+`include "onewire_comparator.v"
+`include "onewire_adapter.v"
+`include "onewire_regfile.v"
 module tb_onewire ();
 
-`include "onewire_params.v"
    //---------------------------------------------------------------
    // Test Bench environment parameters
    //---------------------------------------------------------------
@@ -150,7 +151,6 @@ module tb_onewire ();
    reg [7:0]                  tx_rdatf;
    integer                    i, j;
 
-`include "onewire_tasks.v"
    // initial EEPROM memory
    //initial begin
    //$readmemh("eeprom.data", eeprom); // load eeprom.data into
@@ -227,8 +227,6 @@ module tb_onewire ();
       eeprom[7]  = romcode[63:48];
 `endif
    end
-
-	reg DQ_DRIVE;
 
    // generate simulation clock
    always #(CLK2M4PERIOD/2) sys_clk2m4 = ~sys_clk2m4;
@@ -345,12 +343,12 @@ module tb_onewire ();
       .owam_byte7           ()    // byte7[7:0]
       );
 
-//   initial begin
-//      $dumpfile("onewire_test.vcd");
-//      $dumpvars;
-//      $fsdbDumpfile("onewire_test.fsdb");
-//      $fsdbDumpvars(0,tb_onewire);
-//   end
+   initial begin
+      $dumpfile("onewire_test.vcd");
+      $dumpvars;
+      $fsdbDumpfile("onewire_test.fsdb");
+      $fsdbDumpvars(0,tb_onewire);
+   end
 
    // back-annotate sdf
    //initial begin

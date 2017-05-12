@@ -1,0 +1,4 @@
+Command Line: /edatools/novas/Verdi/platform/LINUXAMD64/bin/Novas -f flist.f -sv
+uname(Linux HaveIdea 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64)
+Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
+au time 8.155036 1.749952 0.170385 delta 60321792 70848512 total 63075320 73602040

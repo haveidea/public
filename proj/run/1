@@ -228,8 +228,6 @@ module tb_onewire ();
 `endif
    end
 
-	reg DQ_DRIVE;
-
    // generate simulation clock
    always #(CLK2M4PERIOD/2) sys_clk2m4 = ~sys_clk2m4;
    always #(CLK300PERIOD/2) sys_clk300 = ~sys_clk300;
