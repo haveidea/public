@@ -345,12 +345,12 @@ module tb_onewire ();
       .owam_byte7           ()    // byte7[7:0]
       );
 
-//   initial begin
-//      $dumpfile("onewire_test.vcd");
-//      $dumpvars;
-//      $fsdbDumpfile("onewire_test.fsdb");
-//      $fsdbDumpvars(0,tb_onewire);
-//   end
+   initial begin
+      $dumpfile("onewire_test.vcd");
+      $dumpvars;
+      $fsdbDumpfile("onewire_test.fsdb");
+      $fsdbDumpvars(0,tb_onewire);
+   end
 
    // back-annotate sdf
    //initial begin
