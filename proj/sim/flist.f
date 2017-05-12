@@ -1,0 +1,14 @@
++incdir+../hdl/adcfilter
++incdir+../hdl/onewire
+../hdl/adcfilter/sinc3_filter.v
+../hdl/onewire/CRC8_D1.v
+../hdl/onewire/CRC8_D8.v
+../hdl/onewire/crc8_func.v
+../hdl/onewire/crc8_lfsr.01.v
+../hdl/onewire/crc8_lfsr.v
+../hdl/onewire/onewire_adapter.v
+../hdl/onewire/onewire_comparator.v
+../hdl/onewire/onewire_define.v
+../hdl/onewire/onewire_params.v
+../hdl/onewire/onewire_regfile.v
+../hdl/onewire/onewire_tasks.v
