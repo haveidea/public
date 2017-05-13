@@ -1,7 +1,7 @@
-module sinc3(mdata1, mclk1, reset, DATA ,word_clk,mode);  
-input mclk1;  
-input reset;  
-input mdata1;  
+module sinc3(data_adc, clk_adc, rstn_adc, DATA ,word_clk,mode);  
+input clk_adc;  
+input rstn_adc;  
+input data_adc;  
 input [1:0]mode;    
 output [15:0] DATA;  
 output word_clk;    
@@ -23,8 +23,8 @@ reg [11:0]   word_count;
 reg word_clk;   reg init;    
 
 /*Perform the Sinc ACTION*/   
-always @ (mdata1)   
-if(mdata1==0) 
+always @ (data_adc)   
+if(data_adc ==0) 
   ip_data1 <= 0;  /* change from a 0 to a -1 for 2's comp */  
 else
   ip_data1 <= 1;    
@@ -32,8 +32,8 @@ else
 /*ACCUMULATOR (INTEGRATOR) Perform the accumulation (IIR) at the speed of the
  * modulator.    Z = one sample delay    MCLKOUT = modulators conversion bit
  * rate*/  
-always @ (posedge mclk1 or posedge reset)   
-if (reset)   begin    
+always @ (posedge clk_adc or negedge rstn_adc)   
+if (!rstn_adc)   begin    
   /*initialize acc registers on reset*/    
   acc1 <= 0;    
   acc2 <= 0;    
@@ -46,8 +46,8 @@ else   begin
   acc3 <= acc3 + acc2;   
 end      /*DECIMATION STAGE (MCLKOUT/ WORD_CLK)*/  
 
-always @ (negedge mclk1 or posedge reset)   
-if (reset)    
+always @ (negedge clk_adc or negedge rstn_adc)   
+if (!rstn_adc)    
   word_count <= 0;  
 else if(mode[1] == 0)   begin    
   if(word_count == 255)    
@@ -68,8 +68,8 @@ else
  * differentiation stage (FIR) at a   lower speed.   Z = one sample delay
  * WORD_CLK = output word rate*/   
 
-always @ (posedge word_clk or posedge reset)   
-if(reset)   begin    
+always @ (posedge word_clk or negedge rstn_adc)   
+if(!rstn_adc)   begin    
   acc3_d2 <= 0;    
   diff1_d <= 0;    
   diff2_d <= 0;    
@@ -88,8 +88,8 @@ end
 
 /* Clock the Sinc output into an output register WORD_CLK = output word rate
  * */  
-always @ (posedge word_clk or posedge reset)   
-if(reset)    
+always @ (posedge word_clk or negedge rstn_adc)   
+if(!rstn_adc)    
   DATA <= 0;  
 else    
   case(mode)    
