@@ -1,0 +1,51 @@
+\documentclass[eversion,noinfo,refcompress]{mysen}
+%\usepackage{tabularx}
+%\usepackage{color}
+%\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{longtable}
+\usepackage{pdflscape}
+
+\hyphenpenalty=1500
+\tolerance=1500
+
+\graphicspath{{figures/}{chart/}{basic/}}
+
+%\definecolor{bkcolor1}{gray}{0.95}
+%\definecolor{bkcolor2}{gray}{0.85}
+%\newcommand{\bkcommand}[1]{\colorbox{bkcolor1}{$\mathtt{\backslash}$\texttt{#1}}}
+%\newcommand{\textgraph}[1]{\raisebox{-1ex}{\includegraphics[width=1.5em]{#1}}}
+
+%% Start of All %%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%% 前言 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\mysenfrontmatter
+%\include{chapters/0.abstract}                % 摘要
+% 隐藏包装的目录、图片、表格等
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% 正文 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\mysenmainmatter
+\include{chapters/1.chap.0.0.intro}                      %引言
+%\include{chapters/1.chap.0.1.background}                 %研究背景
+%
+%\include{chapters/1.chap.1.0.dfa}                        %数据流分析
+%\include{chapters/1.chap.2.0.cfa}                        %执行流分析
+%\include{chapters/1.chap.3.0.parallel}                   %并行框架
+%\include{chapters/1.chap.4.0.experiment}                 %实验
+%\include{chapters/1.chap.9.0.conclusion}                 %结论
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\appendix                                               %附录
+%\include{chapter/2.appendix.1.0.eg}
+%\appendix
+%\include{chapters/appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\mysenbackmatter{\bibliography{bib/dbt}\nocite{*}}
+%\include{chapters/thanks}
+%\include{chapters/resume}
+\end{document}
