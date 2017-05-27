@@ -99,6 +99,3 @@ else
     2'b11:DATA <= diff3[35:20]-4500;//mode3   
   endcase    
 endmodule
-~                                                                                                                                                                                                                                                                                                                                                                                                           
-~                                                                                                                                                                                                                                                                                                                                                                                                           
-~                              
