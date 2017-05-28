@@ -1,3 +1,8 @@
+`define DTT //Digital-circuit Timing Adjust
+`define TB_ONEWIRE tb_onewire
+`define OWAM tb_onewire.owam_inst
+`define LOAD_EEPROM
+
 `define    CLK2M4PERIOD    416   //ns
 `define    CLK2M4RATIO     1
 `define    CLK2M4DUTY      50
@@ -30,3 +35,4 @@
 `define    NEG85DEGREE     8'haa //Celsius degree
 `define    NEG105DEGREE    8'h96 //Celsius degree
 `define    NEG125DEGREE    8'h82 //Celsius degree
+
