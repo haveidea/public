@@ -22,7 +22,7 @@
 //*******************************************************************--
 `timescale 1 ns / 100 ps // timescale for following module
 //*******************************************************************--
-`include "onewire_define.v"
+`include "tb_define.vh"
 //`include "onewire_comparator.v"
 //`include "onewire_adapter.v"
 //`include "onewire_regfile.v"
@@ -32,31 +32,26 @@ module tb_onewire ();
    //---------------------------------------------------------------
    // Test Bench environment parameters
    //---------------------------------------------------------------
-   parameter    CLK2M4PERIOD   = `CLK2M4PERIOD   ; //ns
-   parameter    CLK2M4RATIO    = `CLK2M4RATIO    ;
-   parameter    CLK2M4DUTY     = `CLK2M4DUTY     ;
-   parameter    CLK300PERIOD   = `CLK300PERIOD   ; //ns
-   parameter    CLK300RATIO    = `CLK300RATIO    ;
-   parameter    CLK300DUTY     = `CLK300DUTY     ;
-   parameter    RSTPULSEMIN    = `RSTPULSEMIN    ; //us
-   parameter    RSTPULSEMAX    = `RSTPULSEMAX    ; //us
-   parameter    PRESENCEMIN    = `PRESENCEMIN    ; //us
-   parameter    PRESENCEMAX    = `PRESENCEMAX    ; //us
    parameter    TSLOTINITMIN   = `TSLOTINITMIN   ; //us
    parameter    TSLOTINITMAX   = `TSLOTINITMAX   ; //us
    parameter    TSLOTRCMIN     = `TSLOTRCMIN     ; //us
    parameter    TSLOTRCMAX     = `TSLOTRCMAX     ; //us
    parameter    TSLOTREMMIN    = `TSLOTREMMIN    ; //us
    parameter    TSLOTREMMAX    = `TSLOTREMMAX    ; //us
+
+   parameter    RSTPULSEMIN    = `RSTPULSEMIN    ; //us
+   parameter    RSTPULSEMAX    = `RSTPULSEMAX    ; //us
+
    parameter    RECOVERYMIN    = `RECOVERYMIN    ; //us
    parameter    RECOVERYMAX    = `RECOVERYMAX    ; //us
+
    parameter    POS125DEGREE   = `POS125DEGREE   ; //Celsius degree
    parameter    POS105DEGREE   = `POS105DEGREE   ; //Celsius degree
    parameter    POS85DEGREE    = `POS85DEGREE    ; //Celsius degree
    parameter    POS25DEGREE    = `POS25DEGREE    ; //Celsius degree
    parameter    POS10DEGREE    = `POS10DEGREE    ; //Celsius degree
    parameter    POS1DEGREE     = `POS1DEGREE     ; //Celsius degree
-   parameter    CELSIUS0DEG    = `CELSIUS0DEG    ; //Celsius degree
+
    parameter    NEG1DEGREE     = `NEG1DEGREE     ; //Celsius degree
    parameter    NEG10DEGREE    = `NEG10DEGREE    ; //Celsius degree
    parameter    NEG25DEGREE    = `NEG25DEGREE    ; //Celsius degree
@@ -64,21 +59,12 @@ module tb_onewire ();
    parameter    NEG85DEGREE    = `NEG85DEGREE    ; //Celsius degree
    parameter    NEG105DEGREE   = `NEG105DEGREE   ; //Celsius degree
    parameter    NEG125DEGREE   = `NEG125DEGREE   ; //Celsius degree
-
-
    // simulation signals define
    wire                       sys_clk2m4;   // clock 2.4MHz
    wire                       sys_clk300;   // clock 300KHz
    wire                       sys_resetn;   // resetn 0:reset
    reg                        sys_standby;  // standby
-   reg                        onewire_ctok; // ConvertT done
-   reg                        onewire_crok; // CopyReg done
-   reg                        onewire_reok; // Recall EEPROM done
-   reg                        onewire_ppm;  // parasite power mode
    reg [63:0]                 romcode;
-   reg [7:0]                  owam_byte5;   // byte5
-   reg [7:0]                  owam_byte6;   // byte6
-   reg [7:0]                  owam_byte7;   // byte7
    wire [63:0]                owam_romcode; // romcode[63:0] reg
    wire [7:0]                 owam_tha;     // tha[7:0] reg
    wire [7:0]                 owam_tla;     // tla[7:0] reg
@@ -97,8 +83,6 @@ module tb_onewire ();
    wire [7:0]                 owam_databus; // wr reg 8-bit data bus
 
    //------------------------------------------------------------------
-   reg [15:0]                 onewire_temp;   // 16-bit temperature
-   reg [15:0]                 onewire_ttrim;  // 16-bit timing adjust
    reg [7:0]                  onewire_byte0;  // byte0
    reg [7:0]                  onewire_byte1;  // byte1
    reg [7:0]                  onewire_byte2;  // byte2
@@ -168,15 +152,15 @@ module tb_onewire ();
       $display("ROM Code[63: 0] = 64'h%04H_%04H_%04h_%04H",
                romcode[63:48], romcode[47:32], romcode[31:16],
                romcode[15:0]);
-      onewire_ctok = 0; // ConvertT done
-      onewire_crok = 0; // CopyReg done
-      onewire_reok = 0; // Recall EEPROM done
-      onewire_ppm = 1;  // parasite power mode:1=VDD,0=PPM
-      onewire_temp = 16'h0550;  // 16-bit temperature
-      onewire_ttrim = 16'h8989; // 16-bit timing adjust
-      owam_byte5 = 8'hff;       // byte5
-      owam_byte6 = 8'h96;       // byte6
-      owam_byte7 = 8'h10;       // byte7
+      `CONF.onewire_ctok = 0; // ConvertT done
+      `CONF.onewire_crok = 0; // CopyReg done
+      `CONF.onewire_reok = 0; // Recall EEPROM done
+      `CONF.onewire_ppm = 1;  // parasite power mode:1=VDD,0=PPM
+      `CONF.onewire_temp = 16'h0550;  // 16-bit temperature
+      `CONF.onewire_ttrim = 16'h8989; // 16-bit timing adjust
+      force `CONF.owam_byte5 = 8'hff;       // byte5
+      force `CONF.owam_byte6 = 8'h96;       // byte6
+      force `CONF.owam_byte7 = 8'h10;       // byte7
       onewire_byte0 = 8'h00;  // byte0
       onewire_byte1 = 8'h00;  // byte1
       onewire_byte2 = 8'h00;  // byte2
@@ -211,13 +195,13 @@ module tb_onewire ();
      `ifdef MONO
       eeprom[0]  = {`TB_ONEWIRE.owam_inst.reg_tl[7:0],
                     `TB_ONEWIRE.owam_inst.reg_th[7:0]};
-      eeprom[1]  = {owam_byte5[7:0],
+      eeprom[1]  = {`CONF.owam_byte5[7:0],
                     `TB_ONEWIRE.owam_inst.reg_config[7:0]};
      `else
       eeprom[0]  = {owam_tla[7:0],owam_tha[7:0]};
-      eeprom[1]  = {owam_byte5[7:0],owam_cfg[7:0]};
+      eeprom[1]  = {`CONF.owam_byte5[7:0],owam_cfg[7:0]};
      `endif
-      eeprom[2]  = {owam_byte7[7:0],owam_byte6[7:0]};
+      eeprom[2]  = {`CONF.owam_byte7[7:0],`CONF.owam_byte6[7:0]};
       eeprom[3]  = 16'h55aa;
       eeprom[4]  = romcode[15:0];
       eeprom[5]  = romcode[31:16];
@@ -227,6 +211,15 @@ module tb_onewire ();
    end
 
 	reg DQ_DRIVE;
+   pullup(__DQ__);
+   owand                  owand_inst
+     (
+      // inout
+      .__dq__               (__DQ__),
+      .dq_pad               (onewire_dq),
+      // input
+      .dq_drive             (DQ_DRIVE)
+      );
 
    // generate simulation clock
 
@@ -238,117 +231,14 @@ module tb_onewire ();
 
    // onewire adapter instance
    //pullup #(TSLOTRCMIN*100) (__DQ__);
-   pullup(__DQ__);
-   owpad                    owpad_inst
-     (
-      // inout
-      .__dq__               (__DQ__),
-      // output
-      .dq_in                (onewire_dqin),
-      // input
-      .dq_out               (onewire_dqout),
-      .dq_ena               (onewire_dqena)
-      );
    //assign onewire_dqin = __DQ__;
-   owand                  owand_inst
-     (
-      // inout
-      .__dq__               (__DQ__),
-      .dq_pad               (onewire_dq),
-      // input
-      .dq_drive             (DQ_DRIVE)
-      );
    //------------------------------------------------------------------
    //assign __DQ__ = onewire_dqena? onewire_dqout : 
    //                               `TB_ONEWIRE.DQ_DRIVE;
-  analog_emu 
-  #(.CLK2M4PERIOD(CLK2M4PERIOD), .CLK300PERIOD(CLK300PERIOD))
-  analog_emu
-  (
-      .clk_2m4              (sys_clk2m4),
-      .clk_300k             (sys_clk300),
-      .rstn_o               (sys_resetn)
-  );
 
-   onewire_adapter          owam_inst
-     (
-      // input
-      .clk_2m4              (sys_clk2m4),
-      .clk_300              (sys_clk300),
-      .owpo_rstn            (sys_resetn),
-      .owwu_rstn            (sys_resetn),
-      .owam_ppm             (onewire_ppm),  // parasite power mode
-      .owam_ctok            (onewire_ctok), // ConvertT done
-      .owam_temp            (onewire_temp), // 16-bit temperature
-      .owam_crok            (onewire_crok), // CopyReg done
-      .owam_reok            (onewire_reok), // Recall EEPROM done
-      .dq_in                (onewire_dqin),
-     `ifdef MONO
-     `else
-      .owam_romcode         (owam_romcode), // romcode[63:0]
-      .owam_tha             (owam_tha),     // tha[7:0]
-      .owam_tla             (owam_tla),     // tla[7:0]
-      .owam_cfg             (owam_cfg),     // cfg[7:0]
-     `endif
-      .owam_byte5           (owam_byte5),   // byte5[7:0]
-      .owam_byte6           (owam_byte6),   // byte6[7:0]
-      .owam_byte7           (owam_byte7),   // byte7[7:0]
-     `ifdef DTT
-      .owam_ttrim           (onewire_ttrim), // 16-bit timing adjust
-     `endif
-      // output
-     `ifdef MONO
-     `else
-      .owam_rc0_we          (owam_rc0_we),  // romcode[7:0]   wr en
-      .owam_rc1_we          (owam_rc1_we),  // romcode[15:8]  wr en
-      .owam_rc2_we          (owam_rc2_we),  // romcode[23:16] wr en
-      .owam_rc3_we          (owam_rc3_we),  // romcode[31:24] wr en
-      .owam_rc4_we          (owam_rc4_we),  // romcode[39:32] wr en
-      .owam_rc5_we          (owam_rc5_we),  // romcode[47:40] wr en
-      .owam_rc6_we          (owam_rc6_we),  // romcode[55:48] wr en
-      .owam_rc7_we          (owam_rc7_we),  // romcode[63:56] wr en
-      .owam_tha_we          (owam_tha_we),  // tha[7:0] reg   wr en
-      .owam_tla_we          (owam_tla_we),  // tla[7:0] reg   wr en
-      .owam_cfg_we          (owam_cfg_we),  // cfg[7:0] reg   wr en
-      .owam_databus         (owam_databus), // wr reg 8-bit data bus
-     `endif
-      .owam_copyreg         (onewire_copyreg), // issue CopyReg
-      .owam_recall          (onewire_recall),  // issue Recall
-      .owam_convert         (onewire_convert), // issue ConvertT
-      .dq_out               (onewire_dqout),
-      .dq_ena               (onewire_dqena)
-      );
-
-   //------------------------------------------------------------------
-   onewire_regfile          regfile_inst
-     (
-      // input
-      .clk_2m4              (sys_clk2m4),
-      .clk_300              (sys_clk300),
-      .owpo_rstn            (sys_resetn),
-      .owwu_rstn            (sys_resetn),
-      .owam_ppm             (onewire_ppm),  // parasite power mode
-      .owam_rc0_we          (owam_rc0_we),  // romcode[7:0]   wr en
-      .owam_rc1_we          (owam_rc1_we),  // romcode[15:8]  wr en 
-      .owam_rc2_we          (owam_rc2_we),  // romcode[23:16] wr en 
-      .owam_rc3_we          (owam_rc3_we),  // romcode[31:24] wr en 
-      .owam_rc4_we          (owam_rc4_we),  // romcode[39:32] wr en 
-      .owam_rc5_we          (owam_rc5_we),  // romcode[47:40] wr en 
-      .owam_rc6_we          (owam_rc6_we),  // romcode[55:48] wr en
-      .owam_rc7_we          (owam_rc7_we),  // romcode[63:56] wr en
-      .owam_tha_we          (owam_tha_we),  // tha[7:0] reg   wr en
-      .owam_tla_we          (owam_tla_we),  // tla[7:0] reg   wr en
-      .owam_cfg_we          (owam_cfg_we),  // cfg[7:0] reg   wr en
-      .owam_databus         (owam_databus), // wr reg 8-bit data bus
-      // output
-      .owam_romcode         (owam_romcode), // romcode[63:0]
-      .owam_tha             (owam_tha),     // tha[7:0]
-      .owam_tla             (owam_tla),     // tla[7:0]
-      .owam_cfg             (owam_cfg),     // cfg[7:0]
-      .owam_byte5           (),   // byte5[7:0]
-      .owam_byte6           (),   // byte6[7:0]
-      .owam_byte7           ()    // byte7[7:0]
-      );
+dut u_dut(
+  .DQ(__DQ__)
+);
 
 `ifdef FSDB
    initial begin
@@ -703,8 +593,8 @@ module tb_onewire ();
       scenario = "--<2>-- ->RdROM(hit)->RdReg";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      owam_byte5 = 8'hff; // byte5
-      owam_byte6 = 8'h69; // byte6
+      `CONF.owam_byte5 = 8'hff; // byte5
+      `CONF.owam_byte6 = 8'h69; // byte6
       romcode[63:0]=64'h0000_0000_0000_0000;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
@@ -1215,7 +1105,7 @@ module tb_onewire ();
       scenario = "--<4>-- ->SearchROM(hit)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      owam_byte5 = 8'h04; // byte5
+      `CONF.owam_byte5 = 8'h04; // byte5
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
       DRIVE_DQ_Z;
@@ -2207,9 +2097,9 @@ module tb_onewire ();
          //__CvT__ = !__CvT__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==270) begin
-            onewire_ctok = 1;
+            `CONF.onewire_ctok = 1;
          end else if (i==271) begin
-            onewire_ctok = 0;
+            `CONF.onewire_ctok = 0;
          end
          i = i + 1;
       end
@@ -2226,8 +2116,8 @@ module tb_onewire ();
       scenario = "--<8>-- ->Skip->ConvT,PPM,SetAlarm";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 0;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 0;
+      __PPM__ = `CONF.onewire_ppm;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
@@ -2300,9 +2190,9 @@ module tb_onewire ();
          //__CvT__ = !__CvT__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==270) begin
-            onewire_ctok = 1;
+            `CONF.onewire_ctok = 1;
          end else if (i==271) begin
-            onewire_ctok = 0;
+            `CONF.onewire_ctok = 0;
          end
          i = i + 1;
       end*/
@@ -2311,11 +2201,11 @@ module tb_onewire ();
       tx_wdata = 8'bzzzz_zzzz;
       tx_rdatt = 8'bzzzz_zzzz;
       tx_rdatf = 8'bzzzz_zzzz;
-      onewire_temp = 16'h0690;
+      `CONF.onewire_temp = 16'h0690;
       repeat(27010) #(RECOVERYMIN*1000);
-      onewire_ctok = 1;
+      `CONF.onewire_ctok = 1;
       repeat(100) #(RECOVERYMIN*1000);
-      onewire_ctok = 0;
+      `CONF.onewire_ctok = 0;
       repeat(3000) #(RECOVERYMIN*1000);
 
       //---------------------------------------------------------------
@@ -2324,8 +2214,8 @@ module tb_onewire ();
       scenario = "--<9>-- ->MatchROM(hit)->Copy(VDD)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 1;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 1;
+      __PPM__ = `CONF.onewire_ppm;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
@@ -2574,14 +2464,14 @@ module tb_onewire ();
          //__CpR__ = !__CpR__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==170) begin
-            onewire_crok = 1;
+            `CONF.onewire_crok = 1;
          end else if (i==181) begin
-            onewire_crok = 0;
+            `CONF.onewire_crok = 0;
          end
          i = i + 1;
       end
-      if (onewire_crok) begin
-         onewire_crok = 0;
+      if (`CONF.onewire_crok) begin
+         `CONF.onewire_crok = 0;
       end
       tx_bytes = 8'bzzzz_zzzz;
       tx_bits  = 8'bzzzz_zzzz;
@@ -2596,8 +2486,8 @@ module tb_onewire ();
       scenario = "--<10>-- ->MatchROM(hit)->Copy(PPM)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 0;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 0;
+      __PPM__ = `CONF.onewire_ppm;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
@@ -2846,9 +2736,9 @@ module tb_onewire ();
          //__CpR__ = !__CpR__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==270) begin
-            onewire_crok = 1;
+            `CONF.onewire_crok = 1;
          end else if (i==271) begin
-            onewire_crok = 0;
+            `CONF.onewire_crok = 0;
          end
          i = i + 1;
       end*/
@@ -2858,9 +2748,9 @@ module tb_onewire ();
       tx_rdatt = 8'bzzzz_zzzz;
       tx_rdatf = 8'bzzzz_zzzz;
       repeat(17010) #(RECOVERYMIN*1000);
-      onewire_crok = 1;
+      `CONF.onewire_crok = 1;
       repeat(100) #(RECOVERYMIN*1000);
-      onewire_crok = 0;
+      `CONF.onewire_crok = 0;
       repeat(1000) #(RECOVERYMIN*1000);
 
       //---------------------------------------------------------------
@@ -2869,8 +2759,8 @@ module tb_onewire ();
       scenario = "--<11>-- ->SkipROM->Recall(VDD)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 1;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 1;
+      __PPM__ = `CONF.onewire_ppm;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
@@ -2943,14 +2833,14 @@ module tb_onewire ();
          //__RcE__ = !__RcE__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==130) begin
-            onewire_reok = 1;
+            `CONF.onewire_reok = 1;
          end else if (i==171) begin
-            onewire_reok = 0;
+            `CONF.onewire_reok = 0;
          end
          i = i + 1;
       end
-      if (onewire_reok) begin
-         onewire_reok = 0;
+      if (`CONF.onewire_reok) begin
+         `CONF.onewire_reok = 0;
       end
       tx_bytes = 8'bzzzz_zzzz;
       tx_bits  = 8'bzzzz_zzzz;
@@ -2965,8 +2855,8 @@ module tb_onewire ();
       scenario = "--<12>-- ->SkipROM->Recall(PPM)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 0;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 0;
+      __PPM__ = `CONF.onewire_ppm;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
@@ -3039,14 +2929,14 @@ module tb_onewire ();
          //__RcE__ = !__RcE__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==130) begin
-            onewire_ctok = 1;
+            `CONF.onewire_ctok = 1;
          end else if (i==171) begin
-            onewire_ctok = 0;
+            `CONF.onewire_ctok = 0;
          end
          i = i + 1;
       end
-      if (onewire_reok) begin
-         onewire_reok = 0;
+      if (`CONF.onewire_reok) begin
+         `CONF.onewire_reok = 0;
       end*/
       tx_bytes = 8'bzzzz_zzzz;
       tx_bits  = 8'bzzzz_zzzz;
@@ -3054,9 +2944,9 @@ module tb_onewire ();
       tx_rdatt = 8'bzzzz_zzzz;
       tx_rdatf = 8'bzzzz_zzzz;
       repeat(13010) #(RECOVERYMIN*1000);
-      onewire_reok = 1;
+      `CONF.onewire_reok = 1;
       repeat(3000) #(RECOVERYMIN*1000);
-      onewire_reok = 0;
+      `CONF.onewire_reok = 0;
       repeat(3000) #(RECOVERYMIN*1000);
 
       //---------------------------------------------------------------
@@ -3065,8 +2955,8 @@ module tb_onewire ();
       scenario = "--<13>-- ->AlarmSearch(miss)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 1;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 1;
+      __PPM__ = `CONF.onewire_ppm;
       repeat(10) #(RECOVERYMIN*1000);
       onewire_byte9 = 8'h00;
       onewire_byte10 = 8'h00;
@@ -3484,11 +3374,11 @@ module tb_onewire ();
          //__CvT__ = !__CvT__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==260) begin
-            onewire_temp = 16'h0590;
+            `CONF.onewire_temp = 16'h0590;
          end else if (i==270) begin
-            onewire_ctok = 1;
+            `CONF.onewire_ctok = 1;
          end else if (i==271) begin
-            onewire_ctok = 0;
+            `CONF.onewire_ctok = 0;
          end
          i = i + 1;
       end
@@ -3922,11 +3812,11 @@ module tb_onewire ();
          //__CvT__ = !__CvT__;
          tx_rdatt = 8'bzzzz_zzzz;
          if (i==260) begin
-            onewire_temp = 16'h0970;
+            `CONF.onewire_temp = 16'h0970;
          end else if (i==270) begin
-            onewire_ctok = 1;
+            `CONF.onewire_ctok = 1;
          end else if (i==271) begin
-            onewire_ctok = 0;
+            `CONF.onewire_ctok = 0;
          end
          i = i + 1;
       end
@@ -3943,8 +3833,8 @@ module tb_onewire ();
       scenario = "--<17>-- ->Skip->RdReg(break-5-)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      owam_byte5 = 8'hff; // byte5
-      owam_byte6 = 8'h96; // byte6
+      `CONF.owam_byte5 = 8'hff; // byte5
+      `CONF.owam_byte6 = 8'h96; // byte6
       //romcode[63:0]=64'h0000_0000_0000_0000;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
@@ -4146,8 +4036,8 @@ module tb_onewire ();
       scenario = "--<18>-- ->MatchROM(hit)->RdPPM";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 0;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 0;
+      __PPM__ = `CONF.onewire_ppm;
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
       DRIVE_DQ_Z;
@@ -4396,8 +4286,8 @@ module tb_onewire ();
       scenario = "--<19>-- ->Skip->RdReg(bk-5-)6[0]";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      owam_byte5 = 8'h7f; // byte5
-      owam_byte6 = 8'h95; // byte6
+      `CONF.owam_byte5 = 8'h7f; // byte5
+      `CONF.owam_byte6 = 8'h95; // byte6
       //romcode[63:0]=64'h0000_0000_0000_0000;
       repeat(10) #(RECOVERYMIN*1000);
       RESET_PULSE;
@@ -4599,8 +4489,8 @@ module tb_onewire ();
       scenario = "--<20>-- ->MatchROM(hit)->RdPPM";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      onewire_ppm = 0;
-      __PPM__ = onewire_ppm;
+      `CONF.onewire_ppm = 0;
+      __PPM__ = `CONF.onewire_ppm;
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);
       DRIVE_DQ_Z;
@@ -4849,8 +4739,8 @@ module tb_onewire ();
       scenario = "--<21>-- ->SetupROM(crcerr)";
       //---------"-------8-------16-------24-------35"-----------------
       $display("%0s",scenario);
-      //onewire_ppm = 0;
-      //__PPM__ = onewire_ppm;
+      //`CONF.onewire_ppm = 0;
+      //__PPM__ = `CONF.onewire_ppm;
       romcode[63:0] = 64'h8311_1118_73B3_F528;
       RESET_PULSE;
       repeat(10) #(RECOVERYMIN*1000);

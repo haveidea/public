@@ -1,8 +1,11 @@
 +incdir+../hdl/adcfilter
 +incdir+../hdl/onewire
++incdir+../hdl
 +incdir+../tb
 ../tb/tb_onewire.v
 ../tb/analog_emu.v
+../tb/conf_dummy.v
+../hdl/dut.v
 ../hdl/adcfilter/sinc3.v
 ../hdl/onewire/CRC8_D1.v
 ../hdl/onewire/CRC8_D8.v
@@ -11,5 +14,4 @@
 ../hdl/onewire/onewire_adapter.v
 ../hdl/onewire/onewire_comparator.v
 ../hdl/onewire/onewire_primitive.v
-../hdl/onewire/onewire_define.v
 ../hdl/onewire/onewire_regfile.v
