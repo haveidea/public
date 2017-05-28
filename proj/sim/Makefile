@@ -1,4 +1,5 @@
 DEFINE += +define+SIMU
+DEFINE += +define+FSDB
  VCS_COMPILE_OPTS = -full64 
 #VCS_COMPILE_OPTS += -P ${VERDI_HOME}/share/PLI/VCS/linux64/novas.tab ${VERDI_HOME}/share/PLI/VCS/linux64/pli.a 
  VCS_COMPILE_OPTS  += -debug_access -sverilog ${DEFINE}

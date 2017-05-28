@@ -67,9 +67,9 @@ module tb_onewire ();
 
 
    // simulation signals define
-   reg                        sys_clk2m4;   // clock 2.4MHz
-   reg                        sys_clk300;   // clock 300KHz
-   reg                        sys_resetn;   // resetn 0:reset
+   wire                       sys_clk2m4;   // clock 2.4MHz
+   wire                       sys_clk300;   // clock 300KHz
+   wire                       sys_resetn;   // resetn 0:reset
    reg                        sys_standby;  // standby
    reg                        onewire_ctok; // ConvertT done
    reg                        onewire_crok; // CopyReg done
@@ -161,9 +161,7 @@ module tb_onewire ();
 
    // simulation signals initial
    initial begin
-      sys_clk2m4 = 'b0;
-      sys_clk300 = 'b0;
-      sys_resetn = 'b1;
+      force analog_emu.rstn_o= 'b1;
       sys_standby = 'b0;
       INIT_OWBUS;
       romcode[63:0] = 64'h8300_0008_73B3_F528;
@@ -231,8 +229,6 @@ module tb_onewire ();
 	reg DQ_DRIVE;
 
    // generate simulation clock
-   always #(CLK2M4PERIOD/2) sys_clk2m4 = ~sys_clk2m4;
-   always #(CLK300PERIOD/2) sys_clk300 = ~sys_clk300;
 
    // 1-wire protocol simulation
    always @(`OWAM.reg_comm) begin
@@ -265,6 +261,15 @@ module tb_onewire ();
    //------------------------------------------------------------------
    //assign __DQ__ = onewire_dqena? onewire_dqout : 
    //                               `TB_ONEWIRE.DQ_DRIVE;
+  analog_emu 
+  #(.CLK2M4PERIOD(CLK2M4PERIOD), .CLK300PERIOD(CLK300PERIOD))
+  analog_emu
+  (
+      .clk_2m4              (sys_clk2m4),
+      .clk_300k             (sys_clk300),
+      .rstn_o               (sys_resetn)
+  );
+
    onewire_adapter          owam_inst
      (
       // input
@@ -345,12 +350,20 @@ module tb_onewire ();
       .owam_byte7           ()    // byte7[7:0]
       );
 
+`ifdef FSDB
+   initial begin
+      $fsdbDumpfile("onewire_test.fsdb");
+      $fsdbDumpvars(0,tb_onewire,"+mda");
+      $fsdbDumpon();
+   end
+`endif
+
+`ifdef VCD
    initial begin
       $dumpfile("onewire_test.vcd");
       $dumpvars;
-      $fsdbDumpfile("onewire_test.fsdb");
-      $fsdbDumpvars(0,tb_onewire);
    end
+`endif
 
    // back-annotate sdf
    //initial begin
@@ -373,9 +386,9 @@ module tb_onewire ();
       tx_rdatt = 8'bzzzz_zzzz;
       tx_rdatf = 8'bzzzz_zzzz;
       repeat(10) #(RECOVERYMIN*1000);
-      sys_resetn = 'b0;
+      force analog_emu.rstn_o= 'b0;
       repeat(20) #(RECOVERYMIN*1000);
-      sys_resetn = 'b1;
+      force analog_emu.rstn_o= 'b1;
       repeat(100) #(RECOVERYMIN*1000);
 
       //---------------------------------------------------------------

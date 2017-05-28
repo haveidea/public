@@ -2,6 +2,7 @@
 +incdir+../hdl/onewire
 +incdir+../tb
 ../tb/tb_onewire.v
+../tb/analog_emu.v
 ../hdl/adcfilter/sinc3.v
 ../hdl/onewire/CRC8_D1.v
 ../hdl/onewire/CRC8_D8.v
